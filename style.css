@@ -129,6 +129,7 @@ background-color: rgb(243, 236, 223);
     }
   
     .quisuisje{
+        position: relative;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -137,31 +138,69 @@ background-color: rgb(243, 236, 223);
         width: 600px;
         max-width: 80%;
         margin: auto;
+      
         
     }
 
-    .quisuisje h1{
+   #sect3h1{
+        position: absolute;
         font-family: "rallway";
         text-transform: uppercase;
         letter-spacing: 2px;
-        color:#60A4C2;
+        color:black;
         font-size: 40px;
+        top: 20px;
+        transform: translateX(calc(var(--x)/20)) translateY(calc(var(--y)/20)) ;
     }
 
     .quisuisje p{
+        position: absolute;
         font-family: "rallway";
         width: 65%;
         letter-spacing: 2px;
-        color:#60A4C2;
+        color:black;
         font-size: 20px;
         text-align:center;
+        transform: translateX(calc(var(--x)/15)) translateY(calc(var(--y)/15)) ;
     }
 
 
     .image{
         background-image: url(./images/art.png);
         background-size: contain;
-        background-position: center;
+        background-position: calc(var(--x)/25) calc(var(--y)/25);
         background-repeat: no-repeat;
         
+    }
+
+    @media (max-width:700px){
+        
+   #sect3h1{
+    
+    font-family: "rallway";
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color:black;
+    font-size: 40px;
+   
+}
+
+.quisuisje p{
+   
+    font-family: "rallway";
+    width: 65%;
+    letter-spacing: 2px;
+    color:black;
+    font-size: 20px;
+    text-align:center;
+}
+
+.image{
+    background-image: url(./images/art.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
     }
