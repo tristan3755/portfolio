@@ -105,9 +105,7 @@ background-color: rgb(243, 236, 223);
         justify-content: center;
         min-height: 100vh;
         width: 100%;
-        background-image: url(./images/fondGrand.jpg);
-        background-position: center;
-        background-size: cover;
+        background-color:white;
     }
 
     .apropo{
@@ -117,14 +115,16 @@ background-color: rgb(243, 236, 223);
         justify-content: space-between;
         min-height: 80vh;
         width: 80%;
-        background-image: url(./images/fondPetit.jpg);
-        background-position: bottom;
-        background-size: cover;
+        max-width: 100%;
+        margin: auto;
+       
+      
     }
 
-    .image,.quisuisje{
+    .image{
         min-height: 80vh;
         width: 600px;
+        
       
     }
   
@@ -132,13 +132,19 @@ background-color: rgb(243, 236, 223);
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
+        min-height: 80vh;
+        width: 600px;
+        max-width: 80%;
+        margin: auto;
+        
     }
 
     .quisuisje h1{
-        font-family: "birds";
+        font-family: "rallway";
         text-transform: uppercase;
         letter-spacing: 2px;
-        color: rgb(243, 236, 223);
+        color:#60A4C2;
         font-size: 40px;
     }
 
@@ -146,6 +152,16 @@ background-color: rgb(243, 236, 223);
         font-family: "rallway";
         width: 65%;
         letter-spacing: 2px;
-        color:white;
+        color:#60A4C2;
         font-size: 20px;
+        text-align:center;
+    }
+
+
+    .image{
+        background-image: url(./images/art.png);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        
     }
