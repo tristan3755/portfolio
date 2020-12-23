@@ -145,7 +145,7 @@ background-color: rgb(243, 236, 223);
     .quisuisje h1{
         position: absolute;
         font-family: 'Kalam', cursive;
-        width: 600px;
+        width: 500px;
         max-width: 80%;
         letter-spacing: 2px;
         color:black;
@@ -153,7 +153,7 @@ background-color: rgb(243, 236, 223);
         text-align:center;
         top: 0;
         left: 0;
-        transform: translateX(calc(var(--x)/15)) translateY(calc(var(--y)/15)) ;
+        transform: translateX(calc(var(--x)/10)) translateY(calc(var(--y)/10)) ;
     }
 
  
@@ -176,7 +176,7 @@ background-color: rgb(243, 236, 223);
     .image{
         background-image: url(./images/art.png);
         background-size: contain;
-        background-position: calc(var(--x)/25) calc(var(--y)/25);
+        background-position: calc(var(--x)/20) calc(var(--y)/20);
         background-repeat: no-repeat;
         
     }
