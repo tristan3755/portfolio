@@ -137,53 +137,66 @@ background-color: rgb(243, 236, 223);
         width: 75%;
         max-width: 80%;
         margin: auto;
-        
-      
-        
     }
 
     .quisuisje h1{
         position: absolute;
-        font-family: 'Kalam', cursive;
+        font-family: 'Playfair Display', serif;
         width: 500px;
         max-width: 80%;
         letter-spacing: 2px;
-        color:black;
-        font-size: 20px;
+        color:white;
+        padding: 10px;
+        font-size: 21px;
         text-align:center;
+        background-color:#9E2121;
         top: 0;
         left: 0;
         transform: translateX(calc(var(--x)/10)) translateY(calc(var(--y)/10)) ;
+       
+        border-radius: 5px;
+        opacity: 0.93;
     }
 
  
 
     .quisuisje p{
         position: absolute;
-        font-family: 'Kalam', cursive;
+        font-family: 'Playfair Display', serif;
         width: 600px;
         max-width: 80%;
         letter-spacing: 2px;
-        color:black;
-        font-size: 13px;
+        color:white;
+        padding: 10px;
+        font-size: 16px;
+        background-color: #60A4C2;
         text-align:center;
         bottom: 0;
         right: 0;
-        transform: translateX(calc(var(--x)/15)) translateY(calc(var(--y)/15)) ;
+        transform: translateX(calc(var(--x)/11)) translateY(calc(var(--y)/11));
+       
+        border-radius: 5px;
+        opacity: 0.93;
     }
 
 
     .image{
         background-image: url(./images/art.png);
         background-size: contain;
-        background-position: calc(var(--x)/20) calc(var(--y)/20);
+        background-position: calc(var(--x)/17) calc(var(--y)/17);
         background-repeat: no-repeat;
         
     }
 
     @media (max-width:700px){
         
+        .quisuisje h1{
+            font-size: 10px;
+        }
 
+        .quisuisje p{
+            font-size: 10px;
+        }
 
 .image{
     background-image: url(./images/art.png);
