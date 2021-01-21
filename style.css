@@ -178,7 +178,6 @@ background-color: rgb(243, 236, 223);
         bottom: 0;
         right: 0;
         transform: translateX(calc(var(--x)/11)) translateY(calc(var(--y)/11));
-       
         border-radius: 5px;
         opacity: 0.93;
     }
@@ -215,7 +214,7 @@ background-color: rgb(243, 236, 223);
    flex-direction: column;
    align-items: center;
     width: 100%;
-    min-height: 100vh;
+    min-height: 120vh;
 }
 
 
@@ -228,6 +227,7 @@ background-color: rgb(243, 236, 223);
     flex-wrap: wrap;
     width: 100%;
     font-family: 'Bangers', cursive;
+    margin-bottom: 100px;
 }
 
 #sect4 .titreSect4 p{
@@ -247,7 +247,7 @@ background-color: rgb(243, 236, 223);
 
 .competence{
     position: relative;
-    width: 70%;
+    width: 60%;
     height: 80vh;
    
 }
@@ -257,17 +257,16 @@ background-color: rgb(243, 236, 223);
     top: 70px;
     left: 25px;
     height: auto;
-    width: 300px;
-    z-index: 1;
+    width: 30%;
+   
 }
 
 .descriptionCompetence{
 
     position: absolute;
-    bottom: 50px;
+    bottom: 20px;
     right: 0;
-    width: 700px;
-    max-width: 80%;
+    width: 80%;
     height: auto;
     font-family: 'Bangers', cursive;
     padding: 20px;
@@ -275,9 +274,43 @@ background-color: rgb(243, 236, 223);
     color: white;
     border-radius: 5px;
     letter-spacing: 2px;
-
+    opacity: 0.93;
+    z-index: 1;
 }
 
+#sect5{
+    min-height: 120vh;
+    width: 100%;
+}
 
+@media(max-width:700px){
+    .descriptionCompetence{
+        font-size: 10px;
+        padding: 10px;
+    }
+
+    .html5{
+        height: auto;
+    width: 70%;
+    }
+    .competence{
+        width: 80%;
+    }
+
+}
  
- 
+@media(max-width:800px){
+    .descriptionCompetence{
+        font-size: 15px;
+        padding: 20px;
+    }
+
+    .html5{
+        height: auto;
+    width: 70%;
+    }
+    .competence{
+        width: 80%;
+    }
+
+}
