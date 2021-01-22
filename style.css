@@ -287,14 +287,16 @@ background-color: rgb(243, 236, 223);
     .descriptionCompetence{
         font-size: 10px;
         padding: 10px;
+        width: 60%;
     }
 
     .html5{
+        left: 0;
         height: auto;
-    width: 70%;
+    
     }
     .competence{
-        width: 80%;
+        width: 100%;
     }
 
 }
@@ -307,10 +309,33 @@ background-color: rgb(243, 236, 223);
 
     .html5{
         height: auto;
-    width: 70%;
+    width: 50%;
     }
     .competence{
-        width: 80%;
+        width: 100%;
     }
 
 }
+
+/*********sect5*************************/
+
+#sect5{
+    min-height: 50vh;
+    width: 100%;
+    display: flex;   
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+
+}
+
+.css,.js{
+    width: 500px;
+    max-width: 80%;
+    height: 50vh;
+    background-color: #9E2121;
+    border-radius: 5px;
+}
+
