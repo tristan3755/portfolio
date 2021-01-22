@@ -414,3 +414,35 @@ background-color: rgb(243, 236, 223);
 }
 
 /**********************titrePortfolio/**************************/
+
+#sect7{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 100%;
+    background-color: #9E2121;
+}
+
+
+.portfolioTitre{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+   
+}
+.portfolioTitre p{
+    font-family: 'neon';
+    font-size: 65px;
+    margin: 10px;
+    color: whitesmoke;
+    opacity: 0.6;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "neon";
+    src: url("./images/fontFace/NEON.TTF");
+  }
