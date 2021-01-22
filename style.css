@@ -205,9 +205,9 @@ background-color: rgb(243, 236, 223);
 }
 
 
-  /**********************scet4******************************/
+  /**********************scet4 et sect6******************************/
 
-#sect4{
+#sect4,#sect6{
    
    position: relative;
    display: flex;
@@ -245,14 +245,14 @@ background-color: rgb(243, 236, 223);
 }
 
 
-.competence{
+.competence,.php{
     position: relative;
     width: 60%;
     height: 80vh;
    
 }
 
-.html5{
+.html5,.php8{
     position: absolute;
     top: 70px;
     left: 25px;
@@ -261,7 +261,15 @@ background-color: rgb(243, 236, 223);
    
 }
 
-.descriptionCompetence{
+.php8{
+    height: auto;
+    width: 70%;
+}
+
+
+
+
+.descriptionCompetence,.descriptionCompetencePhp{
 
     position: absolute;
     bottom: 20px;
@@ -277,6 +285,9 @@ background-color: rgb(243, 236, 223);
     opacity: 0.93;
     z-index: 1;
 }
+.descriptionCompetencePhp{
+    background-color:#60A4C2;   
+}
 
 #sect5{
     min-height: 120vh;
@@ -284,25 +295,24 @@ background-color: rgb(243, 236, 223);
 }
 
 @media(max-width:700px){
-    .descriptionCompetence{
+    .descriptionCompetence,.descriptionCompetencePhp{
         font-size: 10px;
         padding: 10px;
         width: 60%;
     }
 
-    .html5{
+    .html5,.php8{
         left: 0;
         height: auto;
-    
     }
-    .competence{
+    .competence,.php{
         width: 100%;
     }
 
 }
  
 @media(max-width:800px){
-    .descriptionCompetence{
+    .descriptionCompetence,.descriptionCompetencePhp{
         font-size: 15px;
         padding: 20px;
     }
@@ -311,7 +321,7 @@ background-color: rgb(243, 236, 223);
         height: auto;
     width: 50%;
     }
-    .competence{
+    .competence,.php{
         width: 100%;
     }
    
@@ -330,9 +340,9 @@ background-color: rgb(243, 236, 223);
 }
 
 .css,.js{
-    width: 400px;
+    width: 350px;
     max-width: 100%;
-    height: 400px;
+    height: 350px;
     border-radius: 50%;
 }
 
@@ -402,3 +412,5 @@ background-color: rgb(243, 236, 223);
 }
 
 }
+
+/**********************titrePortfolio/**************************/

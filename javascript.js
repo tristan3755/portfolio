@@ -15,6 +15,13 @@ window.addEventListener('scroll',(event)=>{
     let imageCompetence=document.querySelector('.html5')
     imageCompetence.style.top= valeur * + 0.2 +"px"
 
+    let descriptionCompetencePhp=document.querySelector('.descriptionCompetencePhp')
+
+    descriptionCompetencePhp.style.bottom= valeur * + 0.5 + "px"
+
+    let imageCompetencePhp=document.querySelector('.php8')
+    imageCompetencePhp.style.top= valeur * + 0.2 +"px"
+
 })
 
 
@@ -37,6 +44,5 @@ if(window.matchMedia("(max-width:800px)").matches){
         js.style.transition="5s"
         js.style.transform="translateY(-150px)"
     })
-
 
 }
