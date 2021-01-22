@@ -16,3 +16,27 @@ window.addEventListener('scroll',(event)=>{
     imageCompetence.style.top= valeur * + 0.2 +"px"
 
 })
+
+
+if(window.matchMedia("(max-width:800px)").matches){
+
+    let css=document.querySelector('.imgCss')
+    css.addEventListener('click',(e)=>{
+        css.style.opacity="0"
+        css.style.filter="blur(50px)"
+        css.style.transition="5s"
+        css.style.transform="translateY(-150px)"
+
+    })
+
+    
+    let js=document.querySelector('.imgJs')
+    js.addEventListener('click',(e)=>{
+        js.style.opacity="0"
+        js.style.filter="blur(50px)"
+        js.style.transition="5s"
+        js.style.transform="translateY(-150px)"
+    })
+
+
+}

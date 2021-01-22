@@ -352,6 +352,7 @@ background-color: rgb(243, 236, 223);
     flex-direction: column;    
     align-items: center;
     justify-content: center;
+   
 }
 
 .css p,.js p{
@@ -376,7 +377,28 @@ background-color: rgb(243, 236, 223);
     width: 100%;
     object-fit: cover;
     border-radius: 50%;
+    transition:ease-in-out 2s;
    
 }
 
+@media(min-width:800px){
 
+.imgCss:hover{
+
+    opacity: 0;
+    transform:translate(120px,-50px);
+    filter: blur(50px);
+    cursor: pointer;
+
+}
+
+.imgJs:hover{
+
+    opacity: 0;
+    transform:translate(-120px,-50px);
+    filter: blur(50px);
+    cursor: pointer;
+
+}
+
+}
