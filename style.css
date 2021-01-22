@@ -244,6 +244,24 @@ background-color: rgb(243, 236, 223);
     font-size: 25px;
 }
 
+#sect4 .titreSect4 h2{
+  
+    letter-spacing:5px;
+    margin-left:5px;
+    font-size: 25px;
+    color: #32ADDF;
+}
+
+#sect4 .titreSect4 h3{
+  
+    letter-spacing:5px;
+    margin-left:5px;
+    font-size: 25px;
+    color: #EFDA4E;
+}
+
+
+
 
 .competence,.php{
     position: relative;
@@ -417,7 +435,7 @@ background-color: rgb(243, 236, 223);
 
 #sect7{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 50vh;
@@ -425,24 +443,14 @@ background-color: rgb(243, 236, 223);
     background-color: #9E2121;
 }
 
-
-.portfolioTitre{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-   
-}
-.portfolioTitre p{
-    font-family: 'neon';
+.titreSect7{
+    font-family: 'Bangers', cursive;
     font-size: 65px;
     margin: 10px;
-    color: whitesmoke;
-    opacity: 0.6;
+    color: white;
+    opacity: 1;
     font-weight: bold;
+    letter-spacing: 5px;
 }
 
-@font-face {
-    font-family: "neon";
-    src: url("./images/fontFace/NEON.TTF");
-  }
+

@@ -48,7 +48,7 @@ if(window.matchMedia("(max-width:800px)").matches){
 }
 
 /**********************neon ***************************/
-
+/*
 window.addEventListener('load',(e)=>{
 setInterval(pOn,500)
 setInterval(pOff,700)
@@ -82,4 +82,4 @@ function oOff(){
     o.style.textShadow="none"
     o.style.color="whitesmoke"
     o.style.opacity="0.6"
-}
+}*/
