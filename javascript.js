@@ -25,7 +25,7 @@ window.addEventListener('scroll',(event)=>{
 
     if(window.matchMedia("(max-width:400px)").matches){
 
-        let valeur2 =scrollY/6;
+        let valeur2 =scrollY/7;
     
         let descriptionCompetencePhp2=document.querySelector('.descriptionCompetencePhp')
     
