@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./index.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2dc5983f48.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <script src="./javascript.js" defer></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <section class="organiz">
+        <header>
+            <div><span></span><span></span><span></span><span></span><a
+                    href="">Inscription société</a></div>
+            <div><span></span><span></span><span></span><span></span><a
+                    href="">connexion société</a></div>
+            <div><span></span><span></span><span></span><span></span><a
+                    href="">connexion vendeur</a></div>
+        </header>
+
+        <video preload="auto" loading="lazy" playsinline muted autoplay poster="" id="organizVideo">
+            <source src="./images/organiz.mp4" type="video/mp4" />
+        </video>
+
+       
+        <img src="./images/techno.png" id="tech">
+        <img src="./images/techno.png" id="tech2">
+        <img src="./images/techno.png">
+    
+
+    </section>
+
+
+    <section id="qui">
+        <div>
+            <h1>Qui sommes-nous?</h1>
+            <h2>Tout pour organiser votre entreprise</h2>
+        </div>
+
+        <article>
+            <div><span class="hover1">
+                <h2 class="titreHover">Facturation</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt facilis magni maxime quia
+                        ullam sed voluptates, perferendis maiores nostrum, cum error possimus qui reprehenderit eveniet
+                        accusamus consequuntur ad tempora impedit?</p>
+                </span></div>
+            <div><span class="hover2">
+                <h2 class="titreHover">Plannification</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima aliquid numquam quisquam. Nulla
+                        commodi consequuntur dignissimos facere corporis! Soluta fugit labore iste tempora
+                        reprehenderit, quis illo. Omnis, asperiores ipsam. Possimus.</p>
+                </span></div>
+            <div><span class="hover3">
+                <h2 class="titreHover">Productivité</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo repellat accusamus soluta eum
+                        quidem veritatis! Laudantium sapiente quam molestias repudiandae rerum dolore voluptatum,
+                        incidunt recusandae vel quo numquam, nihil ut.</p>
+                </span></div>
+
+        </article>
+
+    </section>
+
+    <section id="sect4">
+        <article class="titreSect2">
+          <h1>Contactez-nous</h1>
+        </article>
+        <form method="POST" action="../views/email.php">
+          <div class="input">
+            <div class="saisie">
+              <label for="email">Email</label>
+              <input type="text" name="email" placeholder="votre adresse mail">
+    
+              <label for="prenom">Prénom</label>
+              <input type="text" name="prenom" placeholder="votre prénom">
+    
+              <label for="nom">Nom</label>
+              <input type="text" name="nom" placeholder="votre nom">
+    
+              <label for="objet">Objet</label>
+              <input type="text" name="objet" placeholder="objet de votre demande">
+    
+            </div>
+            <div class="textarea">
+              <textarea name="mail" placeholder="rédigez votre mail ici"></textarea>
+            </div>
+          </div>
+    
+          <button type="submit" class="bouton"> ENVOYER <span></span><span></span><span></span><span></span></button>
+    
+        </form>
+    
+      </section>
+
+      <footer>
+          <p><i class="far fa-copyright"></i>Organiz 2020</p>
+      </footer>
+
+</body>
+
+</html>
