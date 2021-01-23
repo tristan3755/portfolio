@@ -63,3 +63,98 @@ if(window.matchMedia("(max-width:800px)").matches){
 
 }
 
+/*******************************portfolio**********************************************/
+
+
+let monPortfolio=[
+
+
+    {
+    image:"./images/community.jpg",
+    lien:"./sitesPortfolio/anim/index.html",
+    },
+
+    {
+        image:"./images/gantColor.jpg",
+        lien:"./sitesPortfolio/batiment/index.html",
+        },
+
+        {
+            image:"./images/liberty.jpg",
+            lien:"./sitesPortfolio/integration web/index.html",
+            },
+
+]
+
+for (let i in monPortfolio){
+
+let monBloc=document.createElement('article')
+monBloc.style.position="relative"
+let monImage=document.createElement('img')
+monImage.src=monPortfolio[i].image
+monImage.style.position="absolute"
+monImage.style.border="whitesmoke 0.5px solid"
+monImage.style.height="100%"
+monImage.style.width="100%"
+monImage.style.objectFit="cover"
+monImage.style.borderRadius="5px"
+
+monImage.addEventListener('click',lienPortfolio(i))
+
+monBloc.appendChild(monImage)
+
+document.getElementById('portfolio').appendChild(monBloc)
+
+function lienPortfolio(liens){
+
+return function(){
+    window.open(monPortfolio[liens].lien)
+}
+}
+}
+
+
+let monPortfolio2=[
+
+
+    {
+    image2:"./images/organiz.jpg",
+    lien2:"./sitesPortfolio/projetDiplome/index.html",
+    },
+
+    {
+        image2:"./images/the.jpg",
+        lien2:"./sitesPortfolio/site de thé/index.html",
+        },
+
+        
+]
+
+for (let i in monPortfolio2){
+
+let monBloc2=document.createElement('article')
+monBloc2.style.position="relative"
+monBloc2.style.marginTop="5px"
+let monImage2=document.createElement('img')
+monImage2.src=monPortfolio2[i].image2
+monImage2.style.position="absolute"
+monImage2.style.border="whitesmoke 0.5px solid"
+monImage2.style.height="100%"
+monImage2.style.width="100%"
+monImage2.style.objectFit="cover"
+monImage2.style.borderRadius="5px"
+
+monImage2.addEventListener('click',lienPortfolio2(i))
+
+monBloc2.appendChild(monImage2)
+
+document.getElementById('portfolio2').appendChild(monBloc2)
+
+function lienPortfolio2(liens2){
+
+return function(){
+    window.open(monPortfolio2[liens2].lien2)
+}
+}
+}
+
