@@ -22,7 +22,23 @@ window.addEventListener('scroll',(event)=>{
     let imageCompetencePhp=document.querySelector('.php8')
     imageCompetencePhp.style.top= valeur * + 0.2 +"px"
 
+
+    if(window.matchMedia("(max-width:400px)").matches){
+
+        let valeur2 =scrollY/6;
+    
+        let descriptionCompetencePhp2=document.querySelector('.descriptionCompetencePhp')
+    
+        descriptionCompetencePhp2.style.bottom= valeur2 * + 0.5 + "px"
+    
+        let imageCompetencePhp2=document.querySelector('.php8')
+        imageCompetencePhp2.style.top= valeur2 * + 0.2 +"px"
+    }
+    
+
 })
+
+
 
 
 if(window.matchMedia("(max-width:800px)").matches){
@@ -47,39 +63,3 @@ if(window.matchMedia("(max-width:800px)").matches){
 
 }
 
-/**********************neon ***************************/
-/*
-window.addEventListener('load',(e)=>{
-setInterval(pOn,500)
-setInterval(pOff,700)
-setInterval(oOn,300)
-setInterval(oOff,600)
-})
-
-function pOn(){
-    let p=document.querySelector('.p')
-    p.style.textShadow="white 5px 2px 5px"
-    p.style.color="white"
-    p.style.opacity="1"
-}
-
-function pOff(){
-    let p=document.querySelector('.p')
-    p.style.textShadow="none"
-    p.style.color="whitesmoke"
-    p.style.opacity="0.6"
-}
-
-function oOn(){
-    let o=document.querySelector('.o')
-    o.style.textShadow="white 5px 2px 5px"
-    o.style.color="white"
-    o.style.opacity="1"
-}
-
-function oOff(){
-    let o=document.querySelector('.o')
-    o.style.textShadow="none"
-    o.style.color="whitesmoke"
-    o.style.opacity="0.6"
-}*/

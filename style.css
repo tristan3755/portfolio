@@ -312,6 +312,8 @@ background-color: rgb(243, 236, 223);
     width: 100%;
 }
 
+
+
 @media(max-width:700px){
     .descriptionCompetence,.descriptionCompetencePhp{
         font-size: 10px;
@@ -451,6 +453,41 @@ background-color: rgb(243, 236, 223);
     opacity: 1;
     font-weight: bold;
     letter-spacing: 5px;
+    text-align: center;
 }
 
 
+/**********************GridPortfolio/**************************/
+
+#portfolio{
+    min-height: 40vh;
+    width: 100%;
+    background-color: #9E2121;
+    display: grid;
+    grid-template-columns: 1.8fr 1.2fr 1.8fr;
+    grid-gap: 5px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.d1{
+    background-color: white;
+    margin-bottom: 5px;
+}
+.d2{
+    background-color: forestgreen;
+    margin-bottom: 5px;
+}
+.d3{
+    background-color: rgb(41, 34, 34);
+    margin-bottom: 5px;
+}
+
+#portfolio2{
+    min-height: 40vh;
+    width: 100%;
+    background-color: #9E2121;
+    display: grid;
+    grid-template-columns: 1.2fr 1.8fr 1.2fr;
+    grid-gap: 5px;
+
+}
