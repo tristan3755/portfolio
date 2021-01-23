@@ -52,6 +52,8 @@ if(window.matchMedia("(max-width:800px)").matches){
 
     })
 
+    let leTitre=document.querySelector('.titreSect4 h2')
+    leTitre.innerHTML="cliquez sur les bulles"
     
     let js=document.querySelector('.imgJs')
     js.addEventListener('click',(e)=>{
@@ -90,10 +92,11 @@ for (let i in monPortfolio){
 
 let monBloc=document.createElement('article')
 monBloc.style.position="relative"
+monBloc.style.transition="ease 2s"
 let monImage=document.createElement('img')
 monImage.src=monPortfolio[i].image
 monImage.style.position="absolute"
-monImage.style.border="whitesmoke 0.5px solid"
+monImage.style.border="whitesmoke 2px solid"
 monImage.style.height="100%"
 monImage.style.width="100%"
 monImage.style.objectFit="cover"
@@ -138,7 +141,7 @@ monBloc2.style.marginTop="5px"
 let monImage2=document.createElement('img')
 monImage2.src=monPortfolio2[i].image2
 monImage2.style.position="absolute"
-monImage2.style.border="whitesmoke 0.5px solid"
+monImage2.style.border="whitesmoke 2px solid"
 monImage2.style.height="100%"
 monImage2.style.width="100%"
 monImage2.style.objectFit="cover"
