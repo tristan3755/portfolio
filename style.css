@@ -474,7 +474,7 @@ body {
 
 .titreSect7 {
     font-family: 'Bangers', cursive;
-    font-size: 65px;
+    font-size: 5vw;
     margin: 10px;
     color: white;
     opacity: 1;
@@ -630,7 +630,7 @@ body {
     font-family: 'Bangers', cursive;
     letter-spacing: 5px;
     text-align: center;
-    font-size: 3vw;
+    font-size: 5vw;
     filter: drop-shadow(5px 5px 5px black);
     color: white;
 }
@@ -649,7 +649,7 @@ body {
     font-family: 'Bangers', cursive;
     letter-spacing: 5px;
     text-align: center;
-    font-size: 3vw;
+    font-size: 4vw;
     filter: drop-shadow(5px 5px 5px #002044);
     color: white;
 
