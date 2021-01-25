@@ -99,7 +99,7 @@ monImage.style.position="absolute"
 monImage.style.height="100%"
 monImage.style.width="100%"
 monImage.style.objectFit="cover"
-monImage.style.borderRadius="5px"
+monImage.style.borderRadius="2px"
 
 monImage.addEventListener('click',lienPortfolio(i))
 
@@ -144,7 +144,7 @@ monImage2.style.position="absolute"
 monImage2.style.height="100%"
 monImage2.style.width="100%"
 monImage2.style.objectFit="cover"
-monImage2.style.borderRadius="5px"
+monImage2.style.borderRadius="2px"
 
 monImage2.addEventListener('click',lienPortfolio2(i))
 
