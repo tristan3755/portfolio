@@ -460,6 +460,8 @@ body {
 
 /**********************titrePortfolio/**************************/
 
+
+
 #sect7 {
     display: flex;
     flex-direction: column;
@@ -479,6 +481,7 @@ body {
     font-weight: bold;
     letter-spacing: 5px;
     text-align: center;
+    filter: drop-shadow(3px 3px 3px black);
 }
 
 .border {
@@ -586,77 +589,8 @@ body {
 }
 
 /*******************mockup*********************************/
-/*
-#sect8 {
-    min-height: 100vh;
-    width: 100%;
-    background-color: #F6F6F6;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
 
-
-#sect8 article:nth-child(1) {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    width: 40%;
-    min-width: 300px;
-
-
-}
-
-
-#sect8 article h1,
-#sect9 h1 {
-    font-family: 'Bangers', cursive;
-    letter-spacing: 5px;
-    text-align: center;
-    font-size: 80px;
-    color: black;
-    width: 60%;
-    margin: auto;
-
-}
-
-
-.ordi {
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    width: 60%;
-    min-width: 300px;
-    margin: auto;
-
-}
-
-.ordi img,
-.mobile img {
-
-    height: auto;
-    width: 800px;
-    max-width: 100%;
-}
-
-
-#sect9 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    width: 100%;
-    background-color: #F6F6F6;
-}
-
-/*********************sect10****************************/
+/*********************sect10 et citation****************************/
 
 
 
@@ -680,6 +614,45 @@ body {
     object-fit: cover;
     mix-blend-mode: screen;
     
+}
+
+.mesCreation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 35vh;
+    background-color:#9E2121;
+}
+
+.mesCreation p{
+    font-family: 'Bangers', cursive;
+    letter-spacing: 5px;
+    text-align: center;
+    font-size: 3vw;
+    filter: drop-shadow(5px 5px 5px black);
+    color: white;
+}
+
+.citation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 45vh;
+   
+}
+
+.citation p{
+    font-family: 'Bangers', cursive;
+    letter-spacing: 5px;
+    text-align: center;
+    font-size: 3vw;
+    filter: drop-shadow(5px 5px 5px #002044);
+    color: white;
+
 }
 
 
