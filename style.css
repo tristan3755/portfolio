@@ -631,7 +631,7 @@ body {
     letter-spacing: 5px;
     text-align: center;
     font-size: 5vw;
-    filter: drop-shadow(5px 5px 5px black);
+    filter: drop-shadow(1px 1px 1px black);
     color: white;
 }
 
@@ -650,7 +650,7 @@ body {
     letter-spacing: 5px;
     text-align: center;
     font-size: 4vw;
-    filter: drop-shadow(5px 5px 5px #002044);
+    filter: drop-shadow(1px 1px 1px #002044);
     color: white;
 
 }
@@ -658,3 +658,42 @@ body {
 
 /*****************************mockup2****************************/
 
+#dekstop{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+   justify-content: center;
+    min-height: 100vh;
+    width: 100%;    
+}
+.imgDekstop,.imgMobile{
+    position: relative;
+ min-height: 100vh;
+    width: 50%;
+    
+}
+.ordi,.mobile{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.textProduction{
+    
+}
+
+@media(max-width:800px){
+    #dekstop{
+        
+        flex-direction: column;
+        min-height: 100vh;
+        width: 100%;    
+    }
+    .imgDekstop,.imgMobile{
+        min-height: 100vh;
+        width: 100%;
+        
+    } 
+}
