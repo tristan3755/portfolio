@@ -6,7 +6,7 @@ document.documentElement.addEventListener('mousemove',(e)=>{
 
 window.addEventListener('scroll',(event)=>{
 
-    let valeur =scrollY/4;
+    let valeur =scrollY/10;
 
     let descriptionCompetence=document.querySelector('.descriptionCompetence')
 
@@ -25,7 +25,7 @@ window.addEventListener('scroll',(event)=>{
 
     if(window.matchMedia("(max-width:400px)").matches){
 
-        let valeur2 =scrollY/7;
+        let valeur2 =scrollY/13;
     
         let descriptionCompetencePhp2=document.querySelector('.descriptionCompetencePhp')
     
