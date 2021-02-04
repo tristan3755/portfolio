@@ -489,8 +489,6 @@ body {
     grid-template-columns: 1.8fr 1.2fr 1.8fr;
     grid-gap: 5px;
     grid-auto-rows: minmax(100px, auto);
-
-
 }
 
 #portfolio2 {
@@ -500,7 +498,6 @@ body {
     display: grid;
     grid-template-columns: 2fr 2fr;
     grid-gap: 5px;
-
 }
 
 
@@ -508,8 +505,8 @@ body {
     cursor: pointer;
     width: 50vw;
     height: 50vh;
-
 }
+
 
 
 #portfolio2 article:hover {
@@ -517,6 +514,8 @@ body {
     width: 50vw;
     height: 50vh;
 }
+  
+
 
 @media(max-width:790px) {
 
@@ -577,7 +576,7 @@ body {
 
 }
 
-/*******************mockup*********************************/
+
 
 
 /*****************************mockup2****************************/
@@ -647,6 +646,30 @@ body {
 /******************api******************************/
 
 #api{
-    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    min-height: 110vh;
     width: 100%;
+}
+
+#api img{
+    height: auto;
+    width:900px;
+    max-width: 80%;
+}
+
+.borderApi{
+    height: 70vh;
+    width: 5px;
+    background-color: #9E2121;
+    border-radius:40%;
+}
+
+.textApi{
+    height: 80vh;
+    width:200px;
+    max-width: 80%;
 }
