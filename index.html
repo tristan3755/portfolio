@@ -149,6 +149,40 @@
       </p>
     </article>
   </section>
+  <section id="sectContact">
+    <article class="titreSect2">
+      <h1>Contactez-moi</h1>
+    </article>
+    <form method="POST" action="../views/email.php">
+      <div class="input">
+        <div class="saisie">
+          <label for="email">Email</label>
+          <input type="email" name="email" placeholder="votre adresse mail" required>
+
+          <label for="prenom">Prénom</label>
+          <input type="text" name="prenom" placeholder="votre prénom" required>
+
+          <label for="nom">Nom</label>
+          <input type="text" name="nom" placeholder="votre nom" required>
+
+          <label for="objet">Objet</label>
+          <input type="text" name="objet" placeholder="objet de votre demande" required>
+
+        </div>
+        <div class="textarea">
+          <textarea name="mail" placeholder="rédigez votre mail ici" required></textarea>
+        </div>
+      </div>
+
+      <button type="submit" class="bouton"> ENVOYER <span></span><span></span><span></span><span></span></button>
+
+    </form>
+
+  </section>
+
+  <footer>
+      <p><i class="far fa-copyright"></i>Tristan Richard 2021</p>
+  </footer>
 
 
 </body>
