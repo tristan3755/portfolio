@@ -4,43 +4,6 @@ document.documentElement.addEventListener('mousemove',(e)=>{
     document.documentElement.style.setProperty('--y',e.clientY+"px")
 })
 
-window.addEventListener('scroll',(event)=>{
-
-    let valeur =scrollY/10;
-
-    let descriptionCompetence=document.querySelector('.descriptionCompetence')
-
-    descriptionCompetence.style.bottom= valeur * + 0.5 + "px"
-
-    let imageCompetence=document.querySelector('.html5')
-    imageCompetence.style.top= valeur * + 0.2 +"px"
-
-    let descriptionCompetencePhp=document.querySelector('.descriptionCompetencePhp')
-
-    descriptionCompetencePhp.style.bottom= valeur * + 0.5 + "px"
-
-    let imageCompetencePhp=document.querySelector('.php8')
-    imageCompetencePhp.style.top= valeur * + 0.2 +"px"
-
-
-    if(window.matchMedia("(max-width:400px)").matches){
-
-        let valeur2 =scrollY/13;
-    
-        let descriptionCompetencePhp2=document.querySelector('.descriptionCompetencePhp')
-    
-        descriptionCompetencePhp2.style.bottom= valeur2 * + 0.5 + "px"
-    
-        let imageCompetencePhp2=document.querySelector('.php8')
-        imageCompetencePhp2.style.top= valeur2 * + 0.2 +"px"
-    }
-    
-
-})
-
-
-
-
 if(window.matchMedia("(max-width:800px)").matches){
 
     let css=document.querySelector('.imgCss')
@@ -52,8 +15,8 @@ if(window.matchMedia("(max-width:800px)").matches){
 
     })
 
-    let leTitre=document.querySelector('.titreSect4 h3')
-    leTitre.innerHTML="cliquez sur les bulles pour en savoir plus"
+    let leTitre=document.querySelector('.titreSect4 h1')
+    leTitre.innerHTML="Mes compétences"+"<br>"+"cliquez sur les bulles pour en savoir plus"
     
     let js=document.querySelector('.imgJs')
     js.addEventListener('click',(e)=>{

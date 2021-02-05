@@ -72,12 +72,12 @@
 
   <section id="api">
     <article class="api2">
-    <div class="textApi">
-      <p>Je peux aussi interroger des API rest et ainsi créer une application web adaptée à vos besoins</p>
-    </div>
-    
-    <img src="images/api.jpg">
-  </article>
+      <div class="textApi">
+        <p>Je peux aussi interroger des API rest et ainsi créer une application web adaptée à vos besoins</p>
+      </div>
+
+      <img src="images/api.jpg">
+    </article>
   </section>
 
   <section id="sect7">
@@ -99,90 +99,82 @@
       <video preload="auto" loading="lazy" playsinline muted autoplay loop poster="" id="titreVideo">
         <source src="./images/atoms1.mp4" type="video/mp4" />
       </video>
-      <h1>Mes compétences</h1>
+      <h1>Mes compétences <br> Survolez les bulles pour en savoir plus</h1>
     </article>
 
-    <article class="competence">
-      <img src="./images/html5.png" alt="Html5" class="html5" />
-      <p class="descriptionCompetence">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto quod
-        provident odit modi ipsa, id sint iste adipisci dolor itaque corrupti.
-        Vitae, voluptates? Amet culpa ipsum minima libero excepturi illo.
-      </p>
-    </article>
+    <section id="sect5">
+      <article class="html">
+        <img src="./images/html5.jpeg" class="imgHtml"></img>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur
+          amet laboriosam quae beatae iure temporibus quo ut accusamus dolore
+          hic, quaerat eos ipsum error, laudantium recusandae animi. Harum,
+          natus molestiae.
+        </p>
+      </article>
+      <article class="css">
+        <img src="./images/css.webp" class="imgCss"></img>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur
+          amet laboriosam quae beatae iure temporibus quo ut accusamus dolore
+          hic, quaerat eos ipsum error, laudantium recusandae animi. Harum,
+          natus molestiae.
+        </p>
+      </article>
+      <article class="js">
+        <img src="./images/JavaScript-logo.png" class="imgJs"></img>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
+          voluptate harum id, necessitatibus culpa a laboriosam, perspiciatis
+          sint dolor alias quod deleniti blanditiis similique eligendi saepe
+          perferendis, eos non. Cupiditate.
+        </p>
+      </article>
+      <article class="php">
+        <img src="./images/php.png" class="imgPhp"></img>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
+          voluptate harum id, necessitatibus culpa a laboriosam, perspiciatis
+          sint dolor alias quod deleniti blanditiis similique eligendi saepe
+          perferendis, eos non. Cupiditate.
+        </p>
+      </article>
+    </section>
 
-    <article class="titreSect4">
-      <video preload="auto" loading="lazy" playsinline muted autoplay loop poster="" id="titreVideo">
-        <source src="./images/atoms1.mp4" type="video/mp4" />
-      </video>
-      <h3>Survolez les bulles pour en savoir plus </h3>
-    </article>
-  </section>
+    <section id="sectContact">
+      <article class="titreSect2">
+        <h1>Contactez-moi</h1>
+      </article>
+      <form method="POST" action="../views/email.php">
+        <div class="input">
+          <div class="saisie">
+            <label for="email">Email</label>
+            <input type="email" name="email" placeholder="votre adresse mail" required>
 
-  <section id="sect5">
-    <article class="css">
-      <img src="./images/css.webp" class="imgCss"></img>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur
-        amet laboriosam quae beatae iure temporibus quo ut accusamus dolore
-        hic, quaerat eos ipsum error, laudantium recusandae animi. Harum,
-        natus molestiae.
-      </p>
-    </article>
-    <article class="js">
-      <img src="./images/JavaScript-logo.png" class="imgJs"></img>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
-        voluptate harum id, necessitatibus culpa a laboriosam, perspiciatis
-        sint dolor alias quod deleniti blanditiis similique eligendi saepe
-        perferendis, eos non. Cupiditate.
-      </p>
-    </article>
-  </section>
-  <section id="sect6">
-    <article class="php">
-      <img src="./images/php.png" alt="php8" class="php8" />
-      <p class="descriptionCompetencePhp">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto quod
-        provident odit modi ipsa, id sint iste adipisci dolor itaque corrupti.
-        Vitae, voluptates? Amet culpa ipsum minima libero excepturi illo.
-      </p>
-    </article>
-  </section>
-  <section id="sectContact">
-    <article class="titreSect2">
-      <h1>Contactez-moi</h1>
-    </article>
-    <form method="POST" action="../views/email.php">
-      <div class="input">
-        <div class="saisie">
-          <label for="email">Email</label>
-          <input type="email" name="email" placeholder="votre adresse mail" required>
+            <label for="prenom">Prénom</label>
+            <input type="text" name="prenom" placeholder="votre prénom" required>
 
-          <label for="prenom">Prénom</label>
-          <input type="text" name="prenom" placeholder="votre prénom" required>
+            <label for="nom">Nom</label>
+            <input type="text" name="nom" placeholder="votre nom" required>
 
-          <label for="nom">Nom</label>
-          <input type="text" name="nom" placeholder="votre nom" required>
+            <label for="objet">Objet</label>
+            <input type="text" name="objet" placeholder="objet de votre demande" required>
 
-          <label for="objet">Objet</label>
-          <input type="text" name="objet" placeholder="objet de votre demande" required>
-
+          </div>
+          <div class="textarea">
+            <textarea name="mail" placeholder="rédigez votre mail ici" required></textarea>
+          </div>
         </div>
-        <div class="textarea">
-          <textarea name="mail" placeholder="rédigez votre mail ici" required></textarea>
-        </div>
-      </div>
 
-      <button type="submit" class="bouton"> ENVOYER <span></span><span></span><span></span><span></span></button>
+        <button type="submit" class="bouton"> ENVOYER <span></span><span></span><span></span><span></span></button>
 
-    </form>
+      </form>
 
-  </section>
+    </section>
 
-  <footer>
+    <footer>
       <p><i class="far fa-copyright"></i>Tristan Richard 2021</p>
-  </footer>
+    </footer>
 
 
 </body>
