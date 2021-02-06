@@ -142,3 +142,12 @@ return function(){
 }
 }
 
+/********************************fusee *********************************/
+
+let fusee=document.getElementById("fusee")
+
+window.addEventListener("scroll",(event)=>{
+    let valeur=window.scrollY
+
+    fusee.style.bottom = valeur*1+"px"
+})
