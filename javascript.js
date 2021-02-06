@@ -26,6 +26,21 @@ if(window.matchMedia("(max-width:800px)").matches){
         js.style.transform="translateY(-150px)"
     })
 
+    let html=document.querySelector('.imgHtml')
+    html.addEventListener('click',(e)=>{
+        html.style.opacity="0"
+        html.style.filter="blur(50px)"
+        html.style.transition="5s"
+        html.style.transform="translateY(-150px)"
+    })
+
+    let php=document.querySelector('.imgPhp')
+    php.addEventListener('click',(e)=>{
+        php.style.opacity="0"
+        php.style.filter="blur(50px)"
+        php.style.transition="5s"
+        php.style.transform="translateY(-150px)"
+    })
 }
 
 /*******************************portfolio**********************************************/
