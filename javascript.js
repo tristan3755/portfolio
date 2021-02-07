@@ -149,5 +149,71 @@ let fusee=document.getElementById("fusee")
 window.addEventListener("scroll",(event)=>{
     let valeur=window.scrollY
 
-    fusee.style.bottom = valeur*1+"px"
+    fusee.style.bottom = valeur*0.8+"px"
+})
+
+/***********************menu *********************/
+
+let qui=document.querySelector(".qui")
+
+let menuImage=document.querySelector(".images")
+qui.addEventListener("mouseover",()=>{
+    menuImage.style.backgroundImage="url(./images/interrogation.jpg)"
+    menuImage.style.backgroundSize="cover"
+    menuImage.style.backgroundPosition="center"
+    
+})
+qui.addEventListener("mouseout",()=>{
+    menuImage.style.backgroundImage="none"
+    
+})
+
+let portfolioMenu = document.querySelector(".portfolioMenu")
+portfolioMenu .addEventListener("mouseover",()=>{
+    menuImage.style.backgroundImage="url(./images/portfolio.jpg)"
+    menuImage.style.backgroundSize="cover"
+    menuImage.style.backgroundPosition="right"
+    
+})
+portfolioMenu .addEventListener("mouseout",()=>{
+    menuImage.style.backgroundImage="none"
+    
+})
+
+let competencesMenu = document.querySelector(".competences")
+competencesMenu .addEventListener("mouseover",()=>{
+    menuImage.style.backgroundImage="url(./images/competence.jpg)"
+    menuImage.style.backgroundSize="cover"
+    menuImage.style.backgroundPosition="center"
+    
+})
+competencesMenu .addEventListener("mouseout",()=>{
+    menuImage.style.backgroundImage="none"
+    
+})
+
+let contact = document.querySelector(".contactMenu")
+contact .addEventListener("mouseover",()=>{
+    menuImage.style.backgroundImage="url(./images/contact.jpg)"
+    menuImage.style.backgroundSize="cover"
+    menuImage.style.backgroundPosition="center"
+    
+})
+contact .addEventListener("mouseout",()=>{
+    menuImage.style.backgroundImage="none"
+    
+})
+
+
+let croix=document.getElementById("croix")
+let menu=document.getElementById("menu")
+
+croix.addEventListener("click",()=>{
+    menu.style.display="none"
+})
+
+let boutonMenu=document.getElementById("bouton")
+
+boutonMenu.addEventListener("click",()=>{
+    menu.style.display="flex"
 })
