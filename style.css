@@ -10,6 +10,7 @@ body {
 
 
 #home {
+    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -632,7 +633,7 @@ background-color: #4F5B93;
 }
 
 .apiText p{
-    font-family:'Raleway', sans-serif;
+    font-family: 'Bangers', cursive;
     letter-spacing: 5px;
     font-size: 1.5vw;
     color: white;
@@ -676,6 +677,7 @@ max-width: 80%;
       right: 0;
       height: auto;
       width: 100px;
+      z-index: 20;
   }
 
   #sectContact .titreSect2 {
@@ -879,3 +881,25 @@ footer{
     font-family: 'Playfair Display', serif;
   }
   
+  /***********************menu******************************/
+
+  #bouton{
+      position: absolute;
+      top: 25px;
+      right: 25px;
+      height: 70px;
+      width: 70px;
+        z-index: 5;
+      border-radius: 50%;
+      background-image: url(./images/ouverture.jpg);
+      background-position: center;
+      background-size: 158%;
+      
+}
+
+#bouton:hover{
+    cursor: pointer;
+    background-size: 170%;
+    transition: ease-in-out 0.5s;
+    
+}
