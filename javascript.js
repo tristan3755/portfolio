@@ -16,7 +16,7 @@ if(window.matchMedia("(max-width:800px)").matches){
     })
 
     let leTitre=document.querySelector('.titreSect4 h1')
-    leTitre.innerHTML="Mes compétences"+"<br>"+"cliquez sur les bulles pour en savoir plus"
+    leTitre.innerHTML="Mes compétences: "+" <br>" +"cliquez sur les bulles pour en savoir plus"
     
     let js=document.querySelector('.imgJs')
     js.addEventListener('click',(e)=>{
