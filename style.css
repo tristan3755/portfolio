@@ -910,7 +910,7 @@ footer{
   /***********************menu******************************/
 
   #bouton{
-      position: absolute;
+      position: fixed;
       top: 25px;
       right: 25px;
       height: 70px;
@@ -919,7 +919,7 @@ footer{
       border-radius: 50%;
       background-image: url(./images/ouverture.jpg);
       background-position: center;
-      background-size: 158%;
+      background-size: 170%;
 }
 
 @media(max-width:330px){
@@ -934,7 +934,7 @@ footer{
 
 #bouton:hover{
     cursor: pointer;
-    background-size: 170%;
+    background-size: 138%;
     transition: ease-in-out 0.5s;
 }
 
@@ -948,7 +948,22 @@ footer{
     height: 100vh;
     width: 100%;
     z-index: 50;
+    animation: ouverture 2s;
 }
+
+@keyframes ouverture{
+    0%{
+        width: 60%;
+        opacity: 0;
+        
+    }
+
+    100%{
+        width: 100%;
+        opacity: 1;
+    }
+}
+
 .titres,.images{
     position: relative;
 height: 100vh;

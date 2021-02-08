@@ -161,7 +161,7 @@ qui.addEventListener("mouseover",()=>{
     menuImage.style.backgroundImage="url(./images/interrogation.jpg)"
     menuImage.style.backgroundSize="cover"
     menuImage.style.backgroundPosition="center"
-    
+       
 })
 qui.addEventListener("mouseout",()=>{
     menuImage.style.backgroundImage="none"
@@ -204,7 +204,6 @@ contact .addEventListener("mouseout",()=>{
     
 })
 
-
 let croix=document.getElementById("croix")
 let menu=document.getElementById("menu")
 
@@ -216,4 +215,19 @@ let boutonMenu=document.getElementById("bouton")
 
 boutonMenu.addEventListener("click",()=>{
     menu.style.display="flex"
+})
+
+
+
+qui.addEventListener("click",()=>{
+    menu.style.display="none"
+})
+portfolioMenu .addEventListener("click",()=>{
+    menu.style.display="none"
+})
+competencesMenu.addEventListener("click",()=>{
+    menu.style.display="none"
+})
+contact.addEventListener("click",()=>{
+    menu.style.display="none"
 })
