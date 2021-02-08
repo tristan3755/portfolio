@@ -439,21 +439,25 @@ background-color: #4F5B93;
 }
 
 
-#portfolio article:hover {
-    cursor: pointer;
-    width: 50vw;
-    height: 50vh;
+
+
+@media(min-width:810px) {
+
+    #portfolio article:hover {
+        cursor: pointer;
+        width: 50vw;
+        height: 50vh;
+    }
+    
+    
+    
+    #portfolio2 article:hover {
+        cursor: pointer;
+        width: 50vw;
+        height: 50vh;
+    } 
+
 }
-
-
-
-#portfolio2 article:hover {
-    cursor: pointer;
-    width: 50vw;
-    height: 50vh;
-}
-
-
 
 @media(max-width:810px) {
 
@@ -466,12 +470,13 @@ background-color: #4F5B93;
     }
 
     #portfolio article {
-        width: 280px;
+        width: 300px;
         height: auto;
+        
     }
 
     #portfolio2 article {
-        width: 280px;
+        width: 300px;
         height: auto;
     }
 
@@ -683,6 +688,9 @@ max-width: 80%;
     }
     .titreSect7,.titreSect4 h1{
         font-size: 35px;
+    }
+    .apiIdee{
+        min-height: 50vh;
     }
 }
 
