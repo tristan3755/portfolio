@@ -472,12 +472,14 @@ background-color: #4F5B93;
     #portfolio article {
         width: 300px;
         height: 200px;
+        margin-bottom: 20px;
         
     }
 
     #portfolio2 article {
         width: 300px;
         height: 200px;
+        margin-bottom: 20px;
     }
 
 }
