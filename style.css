@@ -471,13 +471,13 @@ background-color: #4F5B93;
 
     #portfolio article {
         width: 300px;
-        height: auto;
+        height: 200px;
         
     }
 
     #portfolio2 article {
         width: 300px;
-        height: auto;
+        height: 200px;
     }
 
 }
