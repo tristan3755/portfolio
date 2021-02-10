@@ -501,8 +501,8 @@ background-color: #4F5B93;
 
 #encre {
     position: absolute;
-    height: 100%;
-    width: 100%;
+    height: 90%;
+    width: 90%;
     object-fit: cover;
     margin-top: 0;
     filter: grayscale(20%);
@@ -903,9 +903,10 @@ max-width: 80%;
 
 footer{
     display: flex;
-    flex-direction:column;
+    flex-direction:row;
     align-items: center;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     width: 100%;
     height: 120px;
     background-color: #9E2121;
@@ -915,6 +916,15 @@ footer{
   footer p{
     color: white;
     font-family: 'Playfair Display', serif;
+  }
+
+  #phone{
+      height: auto;
+      width: 80px;
+  }
+
+  #phone:hover{
+      cursor: pointer;
   }
   
   /***********************menu******************************/
