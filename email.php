@@ -9,7 +9,7 @@ $mail = mail('tristan3755@gmail.com','Envoi depuis la page Contact de mon portfo
 
 }
 
-header('Location:./emailReception.html');
+header('Location:./index.html');
 exit;
 
 ?>
