@@ -231,3 +231,7 @@ competencesMenu.addEventListener("click",()=>{
 contact.addEventListener("click",()=>{
     menu.style.display="none"
 })
+
+
+
+
