@@ -306,6 +306,9 @@ h3 {
     width: 80%;
     font-family: 'Bangers', cursive;
     color: white;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-align: center;
 }
 
 .php{
