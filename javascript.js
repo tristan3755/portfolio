@@ -52,16 +52,19 @@ let monPortfolio=[
     {
     image:"./images/community.jpg",
     lien:"./sitesPortfolio/anim/index.html",
+    description:"Site réalisé pour l'agence web Community à Nancy lors de mon Stage de fin d'étude",
     },
 
     {
         image:"./images/gantColor.jpg",
         lien:"./sitesPortfolio/batiment/index.html",
+        description:"Site réalisé pour l'agence web Community à Nancy lors de mon Stage de fin d'étude",
         },
 
         {
             image:"./images/liberty.jpg",
             lien:"./sitesPortfolio/integration web/index.html",
+            description:"Site réalisé en travaux dirigés lors de mes études",
             },
 
 ]
@@ -70,8 +73,19 @@ for (let i in monPortfolio){
 
 let monBloc=document.createElement('article')
 monBloc.style.position="relative"
-monBloc.style.transition="ease 2s"
+let monBlocDescription=document.createElement('div')
+monBlocDescription.classList.add('divHover')
+let maDescription=document.createElement('p')
+maDescription.innerHTML=monPortfolio[i].description
+maDescription.style.fontFamily="Bangers, cursive"
+maDescription.style.color="white"
+maDescription.style.textAlign="center"
+maDescription.style.fontSize="80%"
+maDescription.style.letterSpacing="2px"
+monBlocDescription.appendChild(maDescription)
+monBloc.appendChild(monBlocDescription)
 let monImage=document.createElement('img')
+monImage.classList.add('imgPortfolio')
 monImage.src=monPortfolio[i].image
 monImage.style.position="absolute"
 monImage.style.height="100%"
@@ -80,6 +94,7 @@ monImage.style.objectFit="cover"
 monImage.style.borderRadius="2px"
 
 monImage.addEventListener('click',lienPortfolio(i))
+monBlocDescription.addEventListener('click',lienPortfolio(i))
 
 monBloc.appendChild(monImage)
 
@@ -91,6 +106,7 @@ return function(){
     window.open(monPortfolio[liens].lien)
 }
 }
+
 }
 
 

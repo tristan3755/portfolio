@@ -26,6 +26,7 @@ body {
     letter-spacing: 2px;
     color: rgb(243, 236, 223);
     font-size: 40px;
+    text-align: center;
 
 }
 
@@ -35,7 +36,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    width: 400px;
+    width: 500px;
     max-width: 80%;
 }
 
@@ -423,47 +424,33 @@ background-color: #4F5B93;
 /**********************GridPortfolio/**************************/
 
 #portfolio {
-    min-height: 40vh;
+    min-height: 60vh;
     width: 100%;
     background-color: #9E2121;
     display: grid;
-    grid-template-columns: 1.8fr 1.2fr 1.8fr;
-    grid-gap: 5px;
+    grid-template-columns: 1.8fr 1.5fr 1.8fr;
+    grid-gap: 2px;
     grid-auto-rows: minmax(100px, auto);
 }
 
 #portfolio2 {
-    min-height: 40vh;
+    min-height: 60vh;
     width: 100%;
     background-color: #9E2121;
     display: grid;
-    grid-template-columns: 2fr 3fr 2fr;
-    grid-gap: 5px;
+    grid-template-columns: 2.5fr 3fr 2fr;
+    grid-gap: 2px;
 }
 
-
-
-
-@media(min-width:810px) {
-
-    #portfolio article:hover {
-        cursor: pointer;
-        width: 50vw;
-        height: 50vh;
-    }
-    
-    
-    
-    #portfolio2 article:hover {
-        cursor: pointer;
-        width: 50vw;
-        height: 50vh;
-    } 
-
+#portfolio article:hover {
+    cursor: pointer;
 }
+#portfolio2 article:hover {
+    cursor: pointer;
+} 
+
 
 @media(max-width:810px) {
-
     #portfolio,
     #portfolio2 {
         display: flex;
@@ -471,25 +458,58 @@ background-color: #4F5B93;
         flex-wrap: wrap;
         justify-content: center;
     }
-
     #portfolio article {
         width: 300px;
         height: 200px;
         margin-bottom: 20px;
         
     }
-
     #portfolio2 article {
         width: 300px;
         height: 200px;
         margin-bottom: 20px;
     }
+}
 
+    
+
+.divHover{
+    display: none;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    background-color: #9E2121;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+    z-index: 1;
+    animation: hoverPort 2s;
+}
+
+#portfolio article:nth-child(1):hover .divHover{
+    display: flex;
+    }
+
+    #portfolio article:nth-child(2):hover .divHover{
+        display: flex;
+        }
+
+        #portfolio article:nth-child(3):hover .divHover{
+            display: flex;
+            }
+
+@keyframes hoverPort{
+    from{
+        height: 0%;
+        opacity: 0;
+    }to{
+        height: 100%;
+        opacity: 0.8;
+    }
 }
 
 /****************************video*******************************/
-
-
 #video {
     position: relative;
     height: 150vh;
