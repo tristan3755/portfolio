@@ -116,7 +116,7 @@ let monPortfolio2=[
     {
     image2:"./images/organiz.jpg",
     lien2:"./sitesPortfolio/projetDiplome/index.html",
-    description2:"¨première page réalisée dans l'optique d'un projet d'une application web de gestion de facture",
+    description2:"Première page réalisée dans l'optique d'un projet d'une application web de gestion de facture",
     },
 
     {
