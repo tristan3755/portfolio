@@ -499,6 +499,20 @@ background-color: #4F5B93;
             display: flex;
             }
 
+            #portfolio2 article:nth-child(1):hover .divHover{
+                display: flex;
+                }
+            
+                #portfolio2 article:nth-child(2):hover .divHover{
+                    display: flex;
+                    }
+            
+                    #portfolio2 article:nth-child(3):hover .divHover{
+                        display: flex;
+                        }
+            
+
+
 @keyframes hoverPort{
     from{
         height: 0%;
