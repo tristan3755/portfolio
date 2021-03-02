@@ -208,187 +208,7 @@ body {
 
 }
 
-
-/**********************scet4 et sect6******************************/
-
-#sect4{
-
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    min-height: 120vh;
-
-}
-
-.titreSect4 {
-    position: relative;
-    min-height: 40vh;
-    width: 100%;
-}
-
-#titreVideo {
-    position: absolute;
-    height: 90%;
-    width: 100%;
-    object-fit: cover;
-    filter: grayscale(20%);
-}
-
-.titreSect4 h1,
-h3 {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    font-family: 'Bangers', cursive;
-    background-color: white;
-    color: black;
-    mix-blend-mode: screen;
-    margin-top: 0;
-    font-size: 5vw;
-    letter-spacing: 5px;
-    text-align: center;
-
-}
-
-/*********sect5*************************/
-
-#sect5 {
-    min-height: 60vh;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-bottom: 150px;
-
-
-}
-
-.css,
-.js,.html,.php {
-    width: 300px;
-    max-width: 100%;
-    height: 300px;
-    border-radius: 50%;
-}
-
-@media(max-width:800px) {
-
-    .css,
-    .js,.html,.php  {
-        width: 280px;
-        max-width: 100%;
-        height: 280px;
-        border-radius: 50%;
-    }
-
-}
-
-.css,
-.js,.html,.php  {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-}
-
-.css p,
-.js p,.html p,.php p {
-    width: 80%;
-    font-family: 'Bangers', cursive;
-    color: white;
-    line-height: 20px;
-    letter-spacing: 2px;
-    text-align: center;
-}
-
-.php{
-background-color: #4F5B93;
-} 
-
-.html{
-    background-color: #F16524;
-    margin-bottom: 20px;
-}
-
-.js {
-
-    background-color: #F0DB4F;
-    margin-bottom: 20px;
-}
-
-.css {
-    background-color: #33ADDF;
-    margin-bottom: 20px;
-}
-
-.imgCss,
-.imgJs,.imgHtml,.imgPhp {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 50%;
-    transition: ease-in-out 2s;
-
-}
-
-@media(min-width:800px) {
-
-    .imgHtml:hover {
-
-        opacity: 0;
-        transform: translate(120px, -50px);
-        filter: blur(50px);
-        cursor: pointer;
-
-    }
-
-
-    .imgCss:hover {
-
-        opacity: 0;
-        transform: translate(120px, -50px);
-        filter: blur(50px);
-        cursor: pointer;
-
-    }
-
-
-    .imgJs:hover {
-
-        opacity: 0;
-        transform: translate(-120px, -50px);
-        filter: blur(50px);
-        cursor: pointer;
-
-    }
-
-    .imgPhp:hover {
-
-        opacity: 0;
-        transform: translate(-120px, -50px);
-        filter: blur(50px);
-        cursor: pointer;
-
-    }
-
-}
-
 /**********************titrePortfolio/**************************/
-
-
-
 #sect7 {
     display: flex;
     flex-direction: column;
@@ -965,7 +785,6 @@ footer{
   }
   
   /***********************menu******************************/
-
   #bouton{
       position: fixed;
       top: 25px;
@@ -978,17 +797,14 @@ footer{
       background-position: center;
       background-size: 170%;
 }
-
 @media(max-width:330px){
     #bouton{
         top: 5px;
         right: 5px; 
         height: 50px;
         width: 50px;
-
     }
 }
-
 #bouton:hover{
     cursor: pointer;
     background-size: 138%;
@@ -1058,4 +874,31 @@ right: 20px;
   .images{
       display: none;
   }
+}
+
+/***************************************************3d***************************************************************/
+
+#blender{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 120vh;width: 100%;  
+  background-color: rgb(17, 17, 17); 
+}
+#robot{
+position: absolute;
+width: 100%;
+height: 100vh;
+object-fit: cover;
+}
+#blender p{
+    position: absolute;
+    color: whitesmoke;
+    font-size: 5vw;
+    letter-spacing: 45px;
+   font-family: 'Bangers', cursive;
+   bottom:150px;
+   z-index: 1;
+   filter: drop-shadow(black 1px 1px 5px);
 }
