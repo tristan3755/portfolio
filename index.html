@@ -110,37 +110,61 @@
     </article>
   </section>
 
-    <section id="sectContact">
-      <article class="titreSect2">
-        <h1>Contactez-moi</h1>
-      </article>
-      <img src="images/fusee2.png" id="fusee">
-      <form method="POST" action="./email.php">
-        <div class="input">
-          <div class="saisie">
-            <label for="email">Email</label>
-            <input type="email" name="email" placeholder="votre adresse mail" required>
+  <section id="competences">
+    <article class="grid">
+      <div class="html5">
+        <h1>html5</h1>
+        <p>
+          Le HTML5 est le langage de base pour le web. Bien structuré et rédigé, il est la pierre angulaire d'un bon
+          référencement naturel.Une rigueur que j'applique à tous mes projets</p>
+      </div>
+      <div class="css">
+        <h1>css3</h1>
+        <p>
+          Le CSS me permets de mettre en forme votre projet, de le rendre attrayant et ergonomique pour vous.
+        </p>
+      </div>
+      <div class="js">
+        <h1>ES6</h1>
+        <p>
+          J'utilise le javascript afin d'animer mes projets. Il me sert le plus souvent dans la manipulation du DOM. Il
+          est ausi utile pour interroger des API REST via des requêtes AJAX et ainsi créer des applications web. </p>
+      </div>
+    </article>
+    <article class="grid"></article>
+  </section>
 
-            <label for="prenom">Prénom</label>
-            <input type="text" name="prenom" placeholder="votre prénom" required>
+  <section id="sectContact">
+    <article class="titreSect2">
+      <h1>Contactez-moi</h1>
+    </article>
+    <img src="images/fusee2.png" id="fusee">
+    <form method="POST" action="./email.php">
+      <div class="input">
+        <div class="saisie">
+          <label for="email">Email</label>
+          <input type="email" name="email" placeholder="votre adresse mail" required>
 
-            <label for="nom">Nom</label>
-            <input type="text" name="nom" placeholder="votre nom" required>
+          <label for="prenom">Prénom</label>
+          <input type="text" name="prenom" placeholder="votre prénom" required>
 
-            <label for="objet">Objet</label>
-            <input type="text" name="objet" placeholder="objet de votre demande" required>
-          </div>
-          <div class="textarea">
-            <textarea name="mail" placeholder="rédigez votre mail ici" required></textarea>
-          </div>
+          <label for="nom">Nom</label>
+          <input type="text" name="nom" placeholder="votre nom" required>
+
+          <label for="objet">Objet</label>
+          <input type="text" name="objet" placeholder="objet de votre demande" required>
         </div>
-        <button type="submit" class="bouton"> ENVOYER <span></span><span></span><span></span><span></span></button>
-      </form>
-    </section>
-    <footer>
-      <p><i class="far fa-copyright"> &nbsp </i>Tristan Richard 2021 <br> source des illustrations: Freepik</p>
-      <a href="tel:0771822320"><img src="./images/phone.png" id="phone"></a>
-    </footer>
+        <div class="textarea">
+          <textarea name="mail" placeholder="rédigez votre mail ici" required></textarea>
+        </div>
+      </div>
+      <button type="submit" class="bouton"> ENVOYER <span></span><span></span><span></span><span></span></button>
+    </form>
+  </section>
+  <footer>
+    <p><i class="far fa-copyright"> &nbsp </i>Tristan Richard 2021 <br> source des illustrations: Freepik</p>
+    <a href="tel:0771822320"><img src="./images/phone.png" id="phone"></a>
+  </footer>
 </body>
 
 </html>

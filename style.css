@@ -10,7 +10,7 @@ body {
 
 
 #home {
-    
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -265,12 +265,14 @@ body {
 #portfolio article:hover {
     cursor: pointer;
 }
+
 #portfolio2 article:hover {
     cursor: pointer;
-} 
+}
 
 
 @media(max-width:810px) {
+
     #portfolio,
     #portfolio2 {
         display: flex;
@@ -278,12 +280,14 @@ body {
         flex-wrap: wrap;
         justify-content: center;
     }
+
     #portfolio article {
         width: 300px;
         height: 200px;
         margin-bottom: 20px;
-        
+
     }
+
     #portfolio2 article {
         width: 300px;
         height: 200px;
@@ -291,9 +295,9 @@ body {
     }
 }
 
-    
 
-.divHover{
+
+.divHover {
     display: none;
     position: absolute;
     align-items: center;
@@ -307,37 +311,39 @@ body {
     animation: hoverPort 2s;
 }
 
-#portfolio article:nth-child(1):hover .divHover{
+#portfolio article:nth-child(1):hover .divHover {
     display: flex;
-    }
+}
 
-    #portfolio article:nth-child(2):hover .divHover{
-        display: flex;
-        }
+#portfolio article:nth-child(2):hover .divHover {
+    display: flex;
+}
 
-        #portfolio article:nth-child(3):hover .divHover{
-            display: flex;
-            }
+#portfolio article:nth-child(3):hover .divHover {
+    display: flex;
+}
 
-            #portfolio2 article:nth-child(1):hover .divHover{
-                display: flex;
-                }
-            
-                #portfolio2 article:nth-child(2):hover .divHover{
-                    display: flex;
-                    }
-            
-                    #portfolio2 article:nth-child(3):hover .divHover{
-                        display: flex;
-                        }
-            
+#portfolio2 article:nth-child(1):hover .divHover {
+    display: flex;
+}
+
+#portfolio2 article:nth-child(2):hover .divHover {
+    display: flex;
+}
+
+#portfolio2 article:nth-child(3):hover .divHover {
+    display: flex;
+}
 
 
-@keyframes hoverPort{
-    from{
+
+@keyframes hoverPort {
+    from {
         height: 0%;
         opacity: 0;
-    }to{
+    }
+
+    to {
         height: 100%;
         opacity: 0.8;
     }
@@ -350,8 +356,8 @@ body {
     width: 100%;
 }
 
-@media(max-width:820px){
-    #video{
+@media(max-width:820px) {
+    #video {
         height: 50vh;
     }
 }
@@ -425,7 +431,7 @@ body {
     width: 400px;
     max-width: 100%;
     height: 400px;
-    background-color:black;
+    background-color: black;
     z-index: 1;
     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 
@@ -470,34 +476,34 @@ body {
     width: 100%;
 }
 
-.apiText{
+.apiText {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     min-height: 110vh;
     width: 50%;
-    min-width:300px;
+    min-width: 300px;
 
 }
 
-.apiText div{
+.apiText div {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color:black;
+    background-color: black;
     width: 475px;
     min-height: 475px;
     border-radius: 5px;
     max-width: 80%;
     box-shadow: #9E2121 -55px 55px;
     border: white solid 3px;
-   
+
 }
 
 
 
-.apiText h1{
+.apiText h1 {
     font-family: 'Bangers', cursive;
     letter-spacing: 5px;
     text-align: center;
@@ -505,7 +511,7 @@ body {
     color: white;
 }
 
-.apiText p{
+.apiText p {
     font-family: 'Bangers', cursive;
     letter-spacing: 5px;
     font-size: 1.5vw;
@@ -514,41 +520,46 @@ body {
     justify-self: center;
     width: 400px;
     max-width: 80%;
-    
+
 }
 
-.apiIdee{
-    
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-min-height: 110vh;
-width: 50%;
+.apiIdee {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 110vh;
+    width: 50%;
 }
 
-.apiIdee img{
-height: auto;
-width:350px;
-max-width: 80%;
+.apiIdee img {
+    height: auto;
+    width: 350px;
+    max-width: 80%;
 }
 
 
-@media(max-width:820px){
-    .apiText div{
+@media(max-width:820px) {
+    .apiText div {
         width: 375px;
         min-height: 375px;
-    } 
-    .apiText h1{
+    }
+
+    .apiText h1 {
         font-size: 35px;
     }
-    .apiText p{
+
+    .apiText p {
         font-size: 15px;
     }
-    .titreSect7,.titreSect4 h1{
+
+    .titreSect7,
+    .titreSect4 h1 {
         font-size: 35px;
     }
-    .apiIdee{
+
+    .apiIdee {
         min-height: 50vh;
     }
 }
@@ -562,18 +573,18 @@ max-width: 80%;
     justify-content: center;
     width: 100%;
     min-height: 100vh;
-  }
+}
 
-  #fusee{
-      position:absolute;
-      bottom:0;
-      right: 0;
-      height: auto;
-      width: 100px;
-      z-index: 20;
-  }
+#fusee {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: auto;
+    width: 100px;
+    z-index: 20;
+}
 
-  #sectContact .titreSect2 {
+#sectContact .titreSect2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -591,28 +602,28 @@ max-width: 80%;
     border-radius: 50%;
     border: solid 3px #9E2121;
     background-color: #9E2121;
-  }
-  
-  .contact {
+}
+
+.contact {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
     height: 50vh;
     width: 100%;
- 
-  }
-  
-  form {
+
+}
+
+form {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     width: 80%;
     min-height: 60vh;
-  }
-  
-  .input {
+}
+
+.input {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -620,23 +631,23 @@ max-width: 80%;
     align-items: center;
     width: 100%;
     min-height: 60vh;
-  }
-  
-  .input input {
+}
+
+.input input {
     margin-bottom: 20px;
     border: #9E2121 3px solid;
-  }
-  
-  .saisie > * {
+}
+
+.saisie>* {
     width: 70%;
     height: 50px;
     border-radius: 5px;
     text-align: center;
-   
+
     min-width: 300px;
-  }
-  
-  .textarea {
+}
+
+.textarea {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -644,20 +655,20 @@ max-width: 80%;
     width: 50%;
     height: 40vh;
     min-width: 300px;
-  }
-  
-  textarea {
+}
+
+textarea {
     resize: none;
     width: 100%;
     height: 100%;
     border-radius: 5px;
     text-align: center;
-   
+
     margin: auto;
     border: #9E2121 3px solid;
-  }
-  
-  .saisie {
+}
+
+.saisie {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -665,9 +676,9 @@ max-width: 80%;
     width: 50%;
     min-width: 300px;
     height: 50vh;
-  }
-  
-  .bouton {
+}
+
+.bouton {
     position: relative;
     background-color: whitesmoke;
     width: 200px;
@@ -677,15 +688,15 @@ max-width: 80%;
     letter-spacing: 5px;
     color: #9E2121;
     margin: 20px;
-     font-family: 'Bangers', cursive;
-  }
-  
-  .bouton span {
+    font-family: 'Bangers', cursive;
+}
+
+.bouton span {
     position: absolute;
     background-color: rgb(158, 33, 33);
-  }
-  
-  .bouton span:nth-child(1) {
+}
+
+.bouton span:nth-child(1) {
     left: 0;
     bottom: 0;
     width: 2px;
@@ -693,15 +704,15 @@ max-width: 80%;
     transform: scaleY(0);
     transform-origin: bottom;
     transition: transform 0.25s;
-  }
-  
-  .bouton:hover span:nth-child(1) {
+}
+
+.bouton:hover span:nth-child(1) {
     transform: scaleY(1);
     transform-origin: bottom;
     transition: transform 0.25s;
-  }
-  
-  .bouton span:nth-child(2) {
+}
+
+.bouton span:nth-child(2) {
     left: 0;
     top: 0;
     width: 100%;
@@ -709,15 +720,15 @@ max-width: 80%;
     transform: scaleX(0);
     transform-origin: left;
     transition: transform 0.5s;
-  }
-  
-  .bouton:hover span:nth-child(2) {
+}
+
+.bouton:hover span:nth-child(2) {
     transform: scaleX(1);
     transform-origin: left;
     transition: transform 0.25s;
-  }
-  
-  .bouton span:nth-child(3) {
+}
+
+.bouton span:nth-child(3) {
     right: 0;
     top: 0;
     width: 2px;
@@ -725,15 +736,15 @@ max-width: 80%;
     transform: scaleY(0);
     transform-origin: top;
     transition: transform 0.25s;
-  }
-  
-  .bouton:hover span:nth-child(3) {
+}
+
+.bouton:hover span:nth-child(3) {
     transform: scaleY(1);
     transform-origin: top;
     transition: transform 0.25s;
-  }
-  
-  .bouton span:nth-child(4) {
+}
+
+.bouton span:nth-child(4) {
     right: 0;
     bottom: 0;
     width: 100%;
@@ -741,26 +752,26 @@ max-width: 80%;
     transform: scaleX(0);
     transform-origin: right;
     transition: transform 0.25s;
-  }
-  
-  .bouton:hover span:nth-child(4) {
+}
+
+.bouton:hover span:nth-child(4) {
     transform: scaleX(1);
     transform-origin: right;
     transition: transform 0.25s;
-  }
-  
-  .bouton:hover {
+}
+
+.bouton:hover {
     background-color: #9E2121;
     color: white;
     transition: 1s ease-in-out;
     cursor: pointer;
-  }
+}
 
 /*******************footer*******************************/
 
-footer{
+footer {
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -768,44 +779,46 @@ footer{
     height: 120px;
     background-color: #9E2121;
 
-  }
+}
 
-  footer p{
+footer p {
     color: white;
     font-family: 'Playfair Display', serif;
-  }
-
-  #phone{
-      height: auto;
-      width: 80px;
-  }
-
-  #phone:hover{
-      cursor: pointer;
-  }
-  
-  /***********************menu******************************/
-  #bouton{
-      position: fixed;
-      top: 25px;
-      right: 25px;
-      height: 70px;
-      width: 70px;
-        z-index: 5;
-      border-radius: 50%;
-      background-image: url(./images/ouverture.jpg);
-      background-position: center;
-      background-size: 170%;
 }
-@media(max-width:330px){
-    #bouton{
+
+#phone {
+    height: auto;
+    width: 80px;
+}
+
+#phone:hover {
+    cursor: pointer;
+}
+
+/***********************menu******************************/
+#bouton {
+    position: fixed;
+    top: 25px;
+    right: 25px;
+    height: 70px;
+    width: 70px;
+    z-index: 5;
+    border-radius: 50%;
+    background-image: url(./images/ouverture.jpg);
+    background-position: center;
+    background-size: 170%;
+}
+
+@media(max-width:330px) {
+    #bouton {
         top: 5px;
-        right: 5px; 
+        right: 5px;
         height: 50px;
         width: 50px;
     }
 }
-#bouton:hover{
+
+#bouton:hover {
     cursor: pointer;
     background-size: 138%;
     transition: ease-in-out 0.5s;
@@ -813,8 +826,8 @@ footer{
 
 /************************menu***********************/
 
-#menu{
-    display:none;
+#menu {
+    display: none;
     flex-direction: row;
     position: fixed;
     background-color: #9E2121;
@@ -824,81 +837,179 @@ footer{
     animation: ouverture 2s;
 }
 
-@keyframes ouverture{
-    0%{
+@keyframes ouverture {
+    0% {
         width: 60%;
         opacity: 0;
-        
+
     }
 
-    100%{
+    100% {
         width: 100%;
         opacity: 1;
     }
 }
 
-.titres,.images{
+.titres,
+.images {
     position: relative;
-height: 100vh;
-width: 100%;
-display: flex;
-flex-direction: column;
-justify-content: space-evenly;
-align-items: center;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-.titres a{
+.titres a {
     text-decoration: none;
     color: white;
     font-size: 25px;
     letter-spacing: 5px;
-   font-family: 'Bangers', cursive;
+    font-family: 'Bangers', cursive;
 }
-.titres a:hover{
+
+.titres a:hover {
     color: wheat;
 }
-#croix{
+
+#croix {
     position: absolute;
     font-size: 30px;
     color: white;
-top: 20px;
-right: 20px;
+    top: 20px;
+    right: 20px;
 }
 
-#croix:hover{
+#croix:hover {
     color: wheat;
     cursor: pointer;
 }
 
-@media(max-width:810px){
-  .images{
-      display: none;
-  }
+@media(max-width:810px) {
+    .images {
+        display: none;
+    }
 }
 
 /***************************************************3d***************************************************************/
 
-#blender{
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 120vh;width: 100%;  
-  background-color: rgb(17, 17, 17); 
+#blender {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 120vh;
+    width: 100%;
+    background-color: rgb(17, 17, 17);
 }
-#robot{
-position: absolute;
-width: 100%;
-height: 100vh;
-object-fit: cover;
+
+#robot {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
 }
-#blender p{
+
+#blender p {
     position: absolute;
     color: whitesmoke;
     font-size: 5vw;
     letter-spacing: 45px;
-   font-family: 'Bangers', cursive;
-   bottom:150px;
-   z-index: 1;
-   filter: drop-shadow(black 1px 1px 5px);
+    font-family: 'Bangers', cursive;
+    bottom: 150px;
+    z-index: 1;
+    filter: drop-shadow(black 1px 1px 5px);
+}
+
+/*****************************competences*************/
+#competences {
+    display: flex;
+    flex-direction: column;
+    min-height: 130vh;
+    width: 100%;
+}
+
+.grid {
+    min-height: 60vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-gap: 2px;
+
+}
+
+.html5,
+.css,
+.js {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    border-radius: 5px;
+}
+
+.html5 {
+    background-color: #f56b20;
+}
+
+.css {
+    background-color: #379AD5;
+}
+
+.js {
+    background-color: #ecd20c;
+}
+
+.html5 h1,
+.css h1,
+.js h1 {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    margin: 0;
+}
+
+.html5 h1 {
+    color: #ee5f12;
+    font-size: 35px;
+    letter-spacing: 5px;
+    font-family: 'Bangers', cursive;
+    filter: drop-shadow(black 0.5px 0.5px 0.5px);
+}
+
+.css h1 {
+    color: #379AD5;
+    font-size: 35px;
+    letter-spacing: 5px;
+    font-family: 'Bangers', cursive;
+    filter: drop-shadow(black 0.5px 0.5px 0.5px);
+    text-transform: uppercase;
+}
+
+.js h1 {
+    color: #EFD81D;
+    font-size: 35px;
+    letter-spacing: 5px;
+    font-family: 'Bangers', cursive;
+    filter: drop-shadow(black 0.5px 0.5px 0.5px);
+    text-transform: uppercase;
+}
+
+.html5 p,
+.css p,
+.js p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 50vh;
+    line-height: 25px;
+    font-size: 20px;
+    letter-spacing: 5px;
+    font-family: 'Bangers', cursive;
+    color: whitesmoke;
 }
