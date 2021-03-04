@@ -14,9 +14,9 @@ function init() {
   document.getElementById('blender').appendChild(container);
 
   camera = new THREE.PerspectiveCamera(
-    45,
+    30,
     window.innerWidth / window.innerHeight,
-    0.25,
+    0.50,
     20
   );
   camera.position.set(0, 1, 9);

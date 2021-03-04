@@ -899,16 +899,16 @@ footer p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 120vh;
+    height: 100vh;
     width: 100%;
     background-color: rgb(17, 17, 17);
 }
 
 #robot {
-    position: absolute;
+    
     width: 100%;
     height: 100vh;
-    object-fit: cover;
+  
 }
 
 #blender p {
@@ -917,7 +917,7 @@ footer p {
     font-size: 5vw;
     letter-spacing: 45px;
     font-family: 'Bangers', cursive;
-    bottom: 150px;
+    bottom: 70px;
     z-index: 1;
     filter: drop-shadow(black 1px 1px 5px);
 }
@@ -936,36 +936,45 @@ footer p {
     display: grid;
     grid-template-columns: 2fr 2fr 2fr;
     grid-gap: 2px;
+    margin-top: 2px;
 
 }
 
 .html5,
 .css,
-.js {
+.js,.php,.three,.blender29 {
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 60vh;
+    min-height: 60vh;
     border-radius: 5px;
 }
 
 .html5 {
-    background-color: #f56b20;
+    background-color: #EC5F27;
 }
 
 .css {
-    background-color: #379AD5;
+    background-color: #1695D0;
 }
 
 .js {
+    background-color: #F7E018;
+}
+.php {
+    background-color: #4E598C;
+}
+.three {
     background-color: #ecd20c;
 }
-
+.blender29 {
+    background-color: #a72626f5;
+}
 .html5 h1,
 .css h1,
-.js h1 {
+.js h1,.php h1,.three h1,.blender29 h1 {
     position: absolute;
     bottom: 15px;
     right: 15px;
@@ -998,18 +1007,100 @@ footer p {
     text-transform: uppercase;
 }
 
+.php h1 {
+    color: #4c5788;
+    font-size: 35px;
+    letter-spacing: 5px;
+    font-family: 'Bangers', cursive;
+    filter: drop-shadow(black 0.5px 0.5px 0.5px);
+    text-transform: uppercase;
+}
+.three h1 {
+    color: #ecd20c;
+    font-size: 35px;
+    letter-spacing: 5px;
+    font-family: 'Bangers', cursive;
+    filter: drop-shadow(black 0.5px 0.5px 0.5px);
+    text-transform: uppercase;
+}
+.blender29 h1 {
+    color: #9E2121;
+    font-size: 35px;
+    letter-spacing: 5px;
+    font-family: 'Bangers', cursive;
+    filter: drop-shadow(black 0.5px 0.5px 0.5px);
+    text-transform: uppercase;
+}
+
 .html5 p,
 .css p,
-.js p {
+.js p,.php p,.three p,.blender29 p {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 90%;
     height: 50vh;
-    line-height: 25px;
-    font-size: 20px;
+    line-height: 2vw;
+    font-size: 1.5vw;
     letter-spacing: 5px;
     font-family: 'Bangers', cursive;
     color: whitesmoke;
+}
+
+/*********hover competences*****************/
+
+.hoverHtml{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 2;
+    border-radius: 5px;
+    transition: ease-in-out 1s;
+    background-image: url("./images/html5.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+.html5:hover .hoverHtml{
+    top:0;
+    width: 25%;
+    height: 25%;
+    cursor: pointer;   
+}
+.hoverCss{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 2;
+    border-radius: 5px;
+    transition: ease-in-out 1s;
+    background-image: url("./images/css.webp");
+    background-position: center;
+    background-size: cover;
+}
+.css:hover .hoverCss{
+    top:0;
+    width: 25%;
+    height: 25%;
+    cursor: pointer;   
+}
+.hoverJs{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 2;
+    border-radius: 5px;
+    transition: ease-in-out 1s;
+    background-image: url("./images/js.png");
+    background-position: center;
+    background-size: cover;
+}
+.js:hover .hoverJs{
+    top:0;
+    width: 20%;
+    height: 20%;
+    cursor: pointer;   
 }
