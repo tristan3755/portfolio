@@ -250,7 +250,7 @@ body {
     display: grid;
     grid-template-columns: 1.8fr 1.5fr 1.8fr;
     grid-gap: 2px;
-    grid-auto-rows: minmax(100px, auto);
+   
 }
 
 #portfolio2 {
@@ -284,14 +284,12 @@ body {
     #portfolio article {
         width: 300px;
         height: 200px;
-        margin-bottom: 20px;
-
     }
 
     #portfolio2 article {
         width: 300px;
         height: 200px;
-        margin-bottom: 20px;
+        margin: 0; 
     }
 }
 
@@ -387,11 +385,7 @@ body {
     font-family: 'Bangers', cursive;
     letter-spacing: 5px;
     text-align: center;
-
 }
-
-
-
 
 /*****************************mockup2****************************/
 
@@ -611,9 +605,7 @@ body {
     align-items: center;
     height: 50vh;
     width: 100%;
-
 }
-
 form {
     display: flex;
     flex-direction: column;
@@ -920,8 +912,14 @@ footer p {
     bottom: 70px;
     z-index: 1;
     filter: drop-shadow(black 1px 1px 5px);
+    text-align: center;
 }
-
+@media(max-width:700px){
+    #blender p{
+        letter-spacing:15px;
+        font-size: 30px;
+    }
+}
 /*****************************competences*************/
 #competences {
     display: flex;
@@ -1026,7 +1024,6 @@ footer p {
     filter: drop-shadow(white 0.5px 0.5px 0.5px);
     text-transform: uppercase;
 }
-
 .html5 p,
 .css p,
 .js p,.php p,.three p,.blender29 p {
@@ -1158,4 +1155,28 @@ footer p {
     width: 25%;
     height: 25%;
     cursor: pointer;   
+}
+
+@media(max-width:800px) {
+
+   .grid{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .html5,
+    .css,
+    .js,.php,.three,.blender29 {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 60vh;
+        border-radius: 5px;
+        width: 500px;
+        max-width: 100%;
+    }
+
 }
