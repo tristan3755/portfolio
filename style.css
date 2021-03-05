@@ -1179,27 +1179,28 @@ footer p {
 /****************************ce que je recherche ************/
 #job{
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
     align-items: center;
     min-height: 110vh;
     width: 100%;
 }
 #recherches{
     position: relative;
-    min-height: 80vh;
-    width: 50%;
+    min-height: 90vh;
+    width:1000px;
     background-image: url(./images/bureau.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: right;
+    max-width: 100%;
     filter: grayscale(70%);
 }
 #head{
     position: absolute;
     background-color: white;
     background-image: url(./images/head.jpg);
-    background-size:cover;
+    background-size:contain;
     background-position: center;
     background-repeat: no-repeat;
     object-fit: cover;
