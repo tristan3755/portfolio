@@ -2,6 +2,7 @@
 
 import * as THREE from "./build/three.module.js";
 
+
 import { GLTFLoader } from "./jsm/loaders/GLTFLoader.js";
 
 let camera, scene, renderer;
@@ -89,8 +90,10 @@ function init() {
   const pmremGenerator = new THREE.PMREMGenerator(renderer);
   pmremGenerator.compileEquirectangularShader();
 
+
   window.addEventListener("resize", onWindowResize);
 }
+
 
 function onWindowResize() {
   camera.aspect = window.innerWidth / window.innerHeight;
@@ -111,3 +114,4 @@ animate();*/
 function render() {
   renderer.render(scene, camera);
 }
+

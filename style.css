@@ -403,7 +403,6 @@ body {
     position: relative;
     min-height: 110vh;
     width: 50%;
-
 }
 
 .ordi,
@@ -413,7 +412,6 @@ body {
     height: 100%;
     object-fit: cover;
 }
-
 .textProduction {
     position: absolute;
     display: flex;
