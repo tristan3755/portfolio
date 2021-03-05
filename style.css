@@ -1087,12 +1087,7 @@ footer p {
     background-position: center;
     background-size: cover;
 }
-.html5:hover .hoverHtml{
-    top:0;
-    width: 25%;
-    height: 25%;
-    cursor: pointer;   
-}
+
 .hoverCss{
     position: absolute;
     width: 100%;
@@ -1105,12 +1100,7 @@ footer p {
     background-position: center;
     background-size: cover;
 }
-.css:hover .hoverCss{
-    top:0;
-    width: 25%;
-    height: 25%;
-    cursor: pointer;   
-}
+
 .hoverJs{
     position: absolute;
     width: 100%;
@@ -1123,12 +1113,7 @@ footer p {
     background-position: center;
     background-size: cover;
 }
-.js:hover .hoverJs{
-    top:0;
-    width: 20%;
-    height: 20%;
-    cursor: pointer;   
-}
+
 .hoverPhp{
     position: absolute;
     width: 100%;
@@ -1141,12 +1126,7 @@ footer p {
     background-position: center;
     background-size: cover;
 }
-.php:hover .hoverPhp{
-    top:0;
-    width: 25%;
-    height: 25%;
-    cursor: pointer;   
-}
+
 .threeJs{
     position: absolute;
     width: 100%;
@@ -1161,12 +1141,7 @@ footer p {
     background-repeat: no-repeat;
     background-color:white;
 }
-.three:hover .threeJs{
-    top:0;
-    width: 25%;
-    height: 25%;
-    cursor: pointer;   
-}
+
 .blenderHover{
     position: absolute;
     width: 100%;
@@ -1181,12 +1156,7 @@ footer p {
     background-repeat: no-repeat;
     background-color:black;
 }
-.blender29:hover .blenderHover{
-    top:0;
-    width: 25%;
-    height: 25%;
-    cursor: pointer;   
-}
+
 .hoverAdobeIll{
     position: absolute;
     width: 100%;
@@ -1201,12 +1171,7 @@ footer p {
     background-repeat: no-repeat;
     background-color:#330000;
 }
-.adobeIll:hover .hoverAdobeIll{
-    top:0;
-    width: 25%;
-    height: 25%;
-    cursor: pointer;   
-}
+
 .hoverAdobePs{
     position: absolute;
     width: 100%;
@@ -1221,12 +1186,7 @@ footer p {
     background-repeat: no-repeat;
     background-color:#001E36;
 }
-.adobePs:hover .hoverAdobePs{
-    top:0;
-    width: 25%;
-    height: 25%;
-    cursor: pointer;   
-}
+
 .mySql{
     position: absolute;
     width: 100%;
@@ -1241,11 +1201,62 @@ footer p {
     background-repeat: no-repeat;
     background-color:white;
 }
-.sql:hover .mySql{
-    top:0;
-    width: 25%;
-    height: 25%;
-    cursor: pointer;   
+
+@media(min-width:700px){
+    .sql:hover .mySql{
+        top:0;
+        width: 25%;
+        height: 25%;
+        cursor: pointer;   
+    }
+    .adobePs:hover .hoverAdobePs{
+        top:0;
+        width: 25%;
+        height: 25%;
+        cursor: pointer;   
+    }
+    .adobeIll:hover .hoverAdobeIll{
+        top:0;
+        width: 25%;
+        height: 25%;
+        cursor: pointer;   
+    }
+    .blender29:hover .blenderHover{
+        top:0;
+        width: 25%;
+        height: 25%;
+        cursor: pointer;   
+    }
+    .three:hover .threeJs{
+        top:0;
+        width: 25%;
+        height: 25%;
+        cursor: pointer;   
+    }
+    .php:hover .hoverPhp{
+        top:0;
+        width: 25%;
+        height: 25%;
+        cursor: pointer;   
+    }
+    .js:hover .hoverJs{
+        top:0;
+        width: 20%;
+        height: 20%;
+        cursor: pointer;   
+    }
+    .css:hover .hoverCss{
+        top:0;
+        width: 25%;
+        height: 25%;
+        cursor: pointer;   
+    }
+    .html5:hover .hoverHtml{
+        top:0;
+        width: 25%;
+        height: 25%;
+        cursor: pointer;   
+    }
 }
 
 @media(max-width:800px) {

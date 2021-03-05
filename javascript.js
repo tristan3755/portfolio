@@ -205,3 +205,18 @@ contact.addEventListener("click", () => {
   menu.style.display = "none";
 });
 
+/*******************************competence ****************************/
+
+let hoverHtml=document.querySelector(".hoverHtml")
+
+function monHoverHtml(){
+hoverHtml.style.top="0"
+hoverHtml.style.width="25%"
+hoverHtml.style.height="25%"
+}
+
+if(matchMedia("(max-width:700px)").matches){
+  hoverHtml.addEventListener("click",()=>{
+    monHoverHtml()
+  })
+}
