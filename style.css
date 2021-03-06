@@ -72,6 +72,7 @@ body {
     border-radius: 50%;
     border: #9E2121 10px solid;
     background-color: rgb(243, 236, 223);
+    
 }
 
 
@@ -1390,5 +1391,19 @@ footer p {
 #apprentissage article:nth-child(6){
     background-image: url(./images/express.png);
     background-size:cover;  
+    
+}
+/*****************************lazyLoad*************************/
+
+article{
+    opacity: 0;
+    transform: translateY(30%);
+    transition: ease 1s;  
+}
+
+.animIntersectSection{
+    opacity: 1;
+    transition: ease 1s;
+    transform: translateY(0);
     
 }

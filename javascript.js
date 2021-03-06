@@ -1,4 +1,31 @@
 
+/****************************IntersectionObserverGlobal*************************/
+let mesImages=document.querySelectorAll("img")
+
+function lazyLoad(target){
+  
+  let Intersection= new IntersectionObserver((entries,observer)=>{
+
+    entries.forEach(entry =>{
+      console.log('je suis rentrée ma gueule')
+      
+      if(entry.isIntersecting){
+        let imagesEntrees = entry.target
+        let source=imagesEntrees.getAttribute('data-lazy')
+        imagesEntrees.setAttribute('src',source)
+        observer.disconnect()
+      }
+    })
+    
+  })
+
+Intersection.observe(target)
+
+}
+
+mesImages.forEach(lazyLoad)
+/****************************IntersectionObserverGlobal*************************/
+
 document.documentElement.addEventListener("mousemove", (e) => {
   document.documentElement.style.setProperty("--x", e.clientX + "px");
   document.documentElement.style.setProperty("--y", e.clientY + "px");
@@ -327,3 +354,32 @@ if(matchMedia("(max-width:700px)").matches){
     monHoverSql()
   })
 }
+
+/****************************IntersectionObserverSection*************************/
+let mesImagesOrdi=document.querySelectorAll("article")
+
+function translateImg(target){
+
+  
+  let Intersection1= new IntersectionObserver((entries,observer)=>{
+
+    entries.forEach(entry =>{
+      
+      
+      if(entry.isIntersecting){
+        let imagesEntrees1 = entry.target
+        imagesEntrees1.classList.add('animIntersectSection')
+        observer.disconnect()
+      }
+    })
+    
+  },{
+    threshold:0.5
+  })
+
+Intersection1.observe(target)
+
+}
+
+mesImagesOrdi.forEach(translateImg)
+/****************************IntersectionObserverSection*************************/
