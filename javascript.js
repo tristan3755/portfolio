@@ -220,3 +220,110 @@ if(matchMedia("(max-width:700px)").matches){
     monHoverHtml()
   })
 }
+
+let hoverCSS=document.querySelector(".hoverCss")
+
+function monHoverCSS(){
+  hoverCSS.style.top="0"
+  hoverCSS.style.width="25%"
+  hoverCSS.style.height="25%"
+}
+
+if(matchMedia("(max-width:700px)").matches){
+  hoverCSS.addEventListener("click",()=>{
+    monHoverCSS()
+  })
+}
+
+let hoverJs=document.querySelector(".hoverJs")
+
+function monHoverJs(){
+  hoverJs.style.top="0"
+  hoverJs.style.width="25%"
+  hoverJs.style.height="25%"
+}
+
+if(matchMedia("(max-width:700px)").matches){
+  hoverJs.addEventListener("click",()=>{
+    monHoverJs()
+  })
+}
+let hoverPhp=document.querySelector(".hoverPhp")
+
+function monHoverPhp(){
+  hoverPhp.style.top="0"
+  hoverPhp.style.width="25%"
+  hoverPhp.style.height="25%"
+}
+
+if(matchMedia("(max-width:700px)").matches){
+  hoverPhp.addEventListener("click",()=>{
+    monHoverPhp()
+  })
+}
+
+let threeJs=document.querySelector(".threeJs")
+
+function monHoverThree(){
+  threeJs.style.top="0"
+  threeJs.style.width="25%"
+  threeJs.style.height="25%"
+}
+
+if(matchMedia("(max-width:700px)").matches){
+  threeJs.addEventListener("click",()=>{
+    monHoverThree()
+  })
+}
+let blenderHover=document.querySelector(".blenderHover")
+
+function monHoverBlender(){
+  blenderHover.style.top="0"
+  blenderHover.style.width="25%"
+  blenderHover.style.height="25%"
+}
+
+if(matchMedia("(max-width:700px)").matches){
+  blenderHover.addEventListener("click",()=>{
+    monHoverBlender()
+  })
+}
+let hoverAdobeIll=document.querySelector(".hoverAdobeIll")
+
+function monHoverIll(){
+  hoverAdobeIll.style.top="0"
+  hoverAdobeIll.style.width="25%"
+  hoverAdobeIll.style.height="25%"
+}
+
+if(matchMedia("(max-width:700px)").matches){
+  hoverAdobeIll.addEventListener("click",()=>{
+    monHoverIll()
+  })
+}
+let hoverAdobePs=document.querySelector(".hoverAdobePs")
+
+function monHoverPs(){
+  hoverAdobePs.style.top="0"
+  hoverAdobePs.style.width="25%"
+  hoverAdobePs.style.height="25%"
+}
+
+if(matchMedia("(max-width:700px)").matches){
+  hoverAdobePs.addEventListener("click",()=>{
+    monHoverPs()
+  })
+}
+let mySql=document.querySelector(".mySql")
+
+function monHoverSql(){
+  mySql.style.top="0"
+  mySql.style.width="25%"
+  mySql.style.height="25%"
+}
+
+if(matchMedia("(max-width:700px)").matches){
+  mySql.addEventListener("click",()=>{
+    monHoverSql()
+  })
+}
