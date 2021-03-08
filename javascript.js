@@ -366,7 +366,7 @@ if (window.matchMedia("(max-width:700px)").matches) {
         });
       },
       {
-        threshold: 0.2,
+        threshold: 0,
       }
     );
 
