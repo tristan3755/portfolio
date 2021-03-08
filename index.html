@@ -1,240 +1,311 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tristan Richard</title>
+    <link href="./style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/2dc5983f48.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./javascript.js" defer></script>
+    <script src="./js3D.js" type="module" defer></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tristan Richard</title>
-  <link href="./style.css" rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/2dc5983f48.js" crossorigin="anonymous"></script>
-  <script src="./javascript.js" defer></script>
-  <script src="./js3D.js" type="module" defer></script>
-</head>
+  <body>
+    <section id="menu">
+      <article class="titres">
+        <i class="fas fa-times" id="croix"></i>
+        <a href="#sect3" class="qui">Qui suis-Je</a>
+        <a href="#portfolio" class="portfolioMenu">Portfolio</a>
+        <a href="#sect4" class="competences">Mes compétences</a>
+        <a href="#sectContact" class="contactMenu">Contactez-moi</a>
+      </article>
+      <article class="images"></article>
+    </section>
 
-<body>
-  <section id="menu">
-    <article class="titres">
-      <i class="fas fa-times" id="croix"></i>
-      <a href="#sect3" class="qui">Qui suis-Je</a>
-      <a href="#portfolio" class="portfolioMenu">Portfolio</a>
-      <a href="#sect4" class="competences">Mes compétences</a>
-      <a href="#sectContact" class="contactMenu">Contactez-moi</a>
-    </article>
-    <article class="images"></article>
-  </section>
-
-  <section id="home">
-    <article id="bouton"></article>
-    <article class="presentation">
-      <h1>Tristan Richard</h1>
-      <div class="portrait">
-        <img data-lazy="./images/tristanRouge.png"/>
-      </div>
-      <h2>développeur web / designer web</h2>
-    </article>
-  </section>
-
-  <section class="sect2">
-    <video preload="auto" loading="lazy" playsinline muted autoplay loop poster="" id="bienvenue">
-      <source src="./images/Bienvenue.mp4" type="video/mp4" />
-    </video>
-  </section>
-
-  <section id="sect3">
-    <article class="apropo">
-      <div class="quisuisje">
-        <h1>
-          Qui suis-je?<br />Le metier de développeur web, à la confluence de
-          l'art et de la technologie
-        </h1>
-        <div class="image"></div>
-        <p>
-          Ancien professionnel du monde de la culture et des arts, je me suis
-          reconverti dans le metier de developpeur web afin d'allier mes deux
-          passions:l'art et l'informatique.
-        </p>
-      </div>
-    </article>
-  </section>
-
-  <section id="video">
-    <video preload="auto" loading="lazy" playsinline muted autoplay loop poster="" id="encre">
-      <source src="./images/atoms1.mp4" type="video/mp4" />
-    </video>
-    <h1 class="projet"> On travaille ensemble ?</h1>
-  </section>
-
-  <section id="dekstop">
-    <article class="imgDekstop">
-      <img data-lazy="./images/ordi.jpg" class="ordi" >
-    </article>
-    <article class="imgMobile">
-      <img data-lazy="./images/mobile.jpg" class="mobile" >
-    </article>
-    <article class="textProduction">
-      <p> Je réalise votre site en version dekstop et mobile</p>
-    </article>
-  </section>
-
-  <section id="api">
-    <article class="apiText">
-      <div>
-        <h1> Web sur mesure </h1>
-        <p>Je réalise vos sites web sur mesure et sans CMS.
-          Je suis aussi capable d'interroger une API
-          REST afin de créer votre application web.</p>
-      </div>
-    </article>
-    <article class="apiIdee">
-      <img data-lazy="./images/idee.png" >
-    </article>
-  </section>
-
-  <section id="sect7">
-    <h1 class="titreSect7"> Mes réalisations </h1>
-    <div class="border"></div>
-  </section>
-  <section id="portfolio">
-  </section>
-  <section id="portfolio2">
-  </section>
-
-  <section id="blender">
-    <p>Mes compétences</p>
-    <article id="robot">
-
-    </article>
-  </section>
-
-  <section id="competences">
-    <article class="grid">
-      <div class="html5">
-        <div class="hoverHtml"></div>
-        <h1>html5</h1>
-        <p>
-          Le HTML5 est le langage de base pour le web. Bien structuré et rédigé, il est la pierre angulaire d'un bon
-          référencement naturel.Une rigueur que j'applique à tous mes projets</p>
-      </div>
-      <div class="css">
-        <div class="hoverCss"></div>
-        <h1>css3</h1>
-        <p>
-          Le CSS me permets de mettre en forme votre projet, de le rendre attrayant et ergonomique pour vous.
-        </p>
-      </div>
-      <div class="js">
-        <div class="hoverJs"></div>
-        <h1>ES6</h1>
-        <p>
-          J'utilise le javascript afin d'animer mes projets. Il me sert le plus souvent dans la manipulation du DOM. Il
-          est ausi utile pour interroger des API REST via des requêtes AJAX et ainsi créer des applications web. </p>
-      </div>
-    </article>
-    <article class="grid">
-      <div class="php">
-        <div class="hoverPhp"></div>
-        <h1>php</h1>
-        <p>
-          Le PHP est un langage back-end qui permet de rendre dynamique le site via l'interrogation d'une base de
-          données. Je suis capable de réaiser une connexion sécurisée via PDO avec une architecture MVC.
-        </p>
-      </div>
-      <div class="three">
-        <div class="threeJs"></div>
-        <h1>three.js</h1>
-        <p>
-          Le PHP est un langage back-end qui permet de rendre dynamique le site via l'interrogation d'une base de
-          données. Je suis capable de réaiser une connexion sécurisée via PDO avec une architecture MVC.
-        </p>
-      </div>
-      <div class="blender29">
-        <div class="blenderHover"></div>
-        <h1>blender</h1>
-        <p>
-          Le PHP est un langage back-end qui permet de rendre dynamique le site via l'interrogation d'une base de
-          données. Je suis capable de réaiser une connexion sécurisée via PDO avec une architecture MVC.
-        </p>
-      </div>
-    </article>
-    <article class="grid">
-      <div class="adobeIll">
-        <div class="hoverAdobeIll"></div>
-        <h1>Adobe Illustrator</h1>
-        <p>
-          Le PHP est un langage back-end qui permet de rendre dynamique le site via l'interrogation d'une base de
-          données. Je suis capable de réaiser une connexion sécurisée via PDO avec une architecture MVC.
-        </p>
-      </div>
-      <div class="adobePs">
-        <div class="hoverAdobePs"></div>
-        <h1>Adobe PhotoShop</h1>
-        <p>
-          Le PHP est un langage back-end qui permet de rendre dynamique le site via l'interrogation d'une base de
-          données. Je suis capable de réaiser une connexion sécurisée via PDO avec une architecture MVC.
-        </p>
-      </div>
-      <div class="sql">
-        <div class="mySql"></div>
-        <h1>MySQl</h1>
-        <p>
-          Le PHP est un langage back-end qui permet de rendre dynamique le site via l'interrogation d'une base de
-          données. Je suis capable de réaiser une connexion sécurisée via PDO avec une architecture MVC.
-        </p>
-      </div>
-    </article>
- </section>
-
- <section id="apprentissage">
- <p>Les technologies</p><p> en cours d'apprentissage</p>
- <article></article>
- <article></article>
- <article></article>
- <article></article>
- </section>
-
-  <section id="job">
-    <article id="recherches">
-      <p>Ce que je recherche? <br> Un CDD ou un CDI </p>
-      <p>Dans quel domaine? <br> Le front-end et <br>le web applicatif</p>
-     <div id="head"></div>
-    </article>
-  </section>
-
-  <section id="sectContact">
-    <article class="titreSect2">
-      <h1>Contactez-moi</h1>
-    </article>
-    <img data-lazy="images/fusee2.png" id="fusee" >
-    <form method="POST" action="./email.php">
-      <div class="input">
-        <div class="saisie">
-          <label for="email">Email</label>
-          <input type="email" name="email" placeholder="votre adresse mail" required>
-
-          <label for="prenom">Prénom</label>
-          <input type="text" name="prenom" placeholder="votre prénom" required>
-
-          <label for="nom">Nom</label>
-          <input type="text" name="nom" placeholder="votre nom" required>
-
-          <label for="objet">Objet</label>
-          <input type="text" name="objet" placeholder="objet de votre demande" required>
+    <section id="home">
+      <article id="bouton"></article>
+      <article class="presentation">
+        <h1>Tristan Richard</h1>
+        <div class="portrait">
+          <img data-lazy="./images/tristanRouge.png" />
         </div>
-        <div class="textarea">
-          <textarea name="mail" placeholder="rédigez votre mail ici" required></textarea>
-        </div>
-      </div>
-      <button type="submit" class="bouton"> ENVOYER <span></span><span></span><span></span><span></span></button>
-    </form>
-  </section>
-  <footer>
-    <p><i class="far fa-copyright"> &nbsp </i>Tristan Richard 2021 <br> source des illustrations: Freepik</p>
-    <a href="tel:0771822320"><img data-lazy="./images/phone.png" id="phone"></a>
-  </footer>
-</body>
+        <h2>développeur web / Junior</h2>
+      </article>
+    </section>
 
+    <section class="sect2">
+      <video
+        preload="auto"
+        loading="lazy"
+        playsinline
+        muted
+        autoplay
+        loop
+        poster=""
+        id="bienvenue"
+      >
+        <source src="./images/Bienvenue.mp4" type="video/mp4" />
+      </video>
+    </section>
+
+    <section id="sect3">
+      <article class="apropo">
+        <div class="quisuisje">
+          <h1>
+            Qui suis-je?<br />Le metier de développeur web, à la confluence de
+            l'art et de la technologie
+          </h1>
+          <div class="image"></div>
+          <p>
+            Ancien professionnel du monde de la culture et des arts, je me suis
+            reconverti dans le metier de developpeur web afin d'allier mes deux
+            passions:l'art et l'informatique.
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <section id="video">
+      <video
+        preload="auto"
+        loading="lazy"
+        playsinline
+        muted
+        autoplay
+        loop
+        poster=""
+        id="encre"
+      >
+        <source src="./images/atoms1.mp4" type="video/mp4" />
+      </video>
+      <h1 class="projet">On travaille ensemble ?</h1>
+    </section>
+
+    <section id="dekstop">
+      <article class="imgDekstop">
+        <img data-lazy="./images/ordi.jpg" class="ordi" />
+      </article>
+      <article class="imgMobile">
+        <img data-lazy="./images/mobile.jpg" class="mobile" />
+      </article>
+      <article class="textProduction">
+        <p>Je réalise votre site en version dekstop et mobile</p>
+      </article>
+    </section>
+
+    <section id="api">
+      <article class="apiText">
+        <div>
+          <h1>Web sur mesure</h1>
+          <p>
+            Je réalise vos sites web sur mesure et sans CMS. Je suis aussi
+            capable d'interroger une API REST afin de créer votre application
+            web.
+          </p>
+        </div>
+      </article>
+      <article class="apiIdee">
+        <img data-lazy="./images/idee.png" />
+      </article>
+    </section>
+
+    <section id="sect7">
+      <h1 class="titreSect7">Mes réalisations</h1>
+      <div class="border"></div>
+    </section>
+    <section id="portfolio"></section>
+    <section id="portfolio2"></section>
+
+    <section id="blender">
+      <p>Mes compétences</p>
+      <article id="robot"></article>
+    </section>
+
+    <section id="competences">
+      <article class="grid">
+        <div class="html5">
+          <div class="hoverHtml"></div>
+          <h1>html5</h1>
+          <p>
+            Le HTML5 est le langage de base pour le web. Bien structuré et
+            rédigé, il est la pierre angulaire d'un bon référencement
+            naturel.Une rigueur que j'applique à tous mes projets
+          </p>
+        </div>
+        <div class="css">
+          <div class="hoverCss"></div>
+          <h1>css3</h1>
+          <p>
+            Le CSS me permets de mettre en forme votre projet, de le rendre
+            attrayant et ergonomique pour vous.
+          </p>
+        </div>
+        <div class="js">
+          <div class="hoverJs"></div>
+          <h1>ES6</h1>
+          <p>
+            J'utilise le javascript afin d'animer mes projets. Il me sert le
+            plus souvent dans la manipulation du DOM. Il est ausi utile pour
+            interroger des API REST via des requêtes AJAX et ainsi créer des
+            applications web.
+          </p>
+        </div>
+      </article>
+      <article class="grid">
+        <div class="php">
+          <div class="hoverPhp"></div>
+          <h1>php</h1>
+          <p>
+            Le PHP est un langage back-end qui permet de rendre dynamique le
+            site via l'interrogation d'une base de données. Je suis capable de
+            réaiser une connexion sécurisée via PDO avec une architecture MVC.
+          </p>
+        </div>
+        <div class="three">
+          <div class="threeJs"></div>
+          <h1>three.js</h1>
+          <p>
+            Cette librairie est l'une des rares librairies que j'utilise, elle
+            permet d'eviter les calculs de vecteur et de matrice du Webgl. Avec
+            three.js il est possible de réaliser facilemment une scène pour
+            accueillir un objet 3D.
+          </p>
+        </div>
+        <div class="blender29">
+          <div class="blenderHover"></div>
+          <h1>blender</h1>
+          <p>
+            Blender est un logiciel de création 3D. Couplé avec three.js, il est
+            possible d'intégrer un objet 3D dans une application web. J'ai
+            effectué le robot ci-dessus via ce logiciel. J'utilise Blender que
+            depuis peu et j'ai donc encore beaucoup à apprendre.
+          </p>
+        </div>
+      </article>
+      <article class="grid">
+        <div class="adobeIll">
+          <div class="hoverAdobeIll"></div>
+          <h1>Adobe Illustrator</h1>
+          <p>
+            J'utilise illustrator afin d'améliorer l'aspect visuel. J'ai réalisé
+            mon portrait présent tout au début de ce site via l'outil plume
+            d'illustrator. Mon utilisation la plus importante de ce logiciel est
+            dans la modification de dessin déja existant provenant de Freepik
+          </p>
+        </div>
+        <div class="adobePs">
+          <div class="hoverAdobePs"></div>
+          <h1>Adobe PhotoShop</h1>
+          <p>
+            PhotoShop me sert pour la réalisation de mock-up. Il est aussi trés
+            utile pour redimensionner des images trop grandes et donc trop
+            lourdes.
+          </p>
+        </div>
+        <div class="sql">
+          <div class="mySql"></div>
+          <h1>MySQl</h1>
+          <p>
+            Afin de gérer la partie back-end, je me tourne vers mySql avec
+            PhpMyadmin. Je sais réaliser des tables avec relations et
+            cardinalité.Cependnat je souhaite me trourner vers MongoDb.
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <section id="apprentissage">
+      <p>Les technologies</p>
+      <p>en cours d'apprentissage</p>
+      <article></article>
+      <article></article>
+      <article></article>
+      <article></article>
+    </section>
+
+    <section id="job">
+      <article id="recherches">
+        <p>
+          Ce que je recherche? <br />
+          Un CDD ou un CDI
+        </p>
+        <p>
+          Dans quel domaine? <br />
+          Le front-end et <br />le web applicatif
+        </p>
+        <div id="head"></div>
+      </article>
+    </section>
+
+    <section id="sectContact">
+      <article class="titreSect2">
+        <h1>Contactez-moi</h1>
+      </article>
+      <div id="fusee"></div>
+      <form method="POST" action="./email.php">
+        <div class="input">
+          <div class="saisie">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              placeholder="votre adresse mail"
+              required
+            />
+
+            <label for="prenom">Prénom</label>
+            <input
+              type="text"
+              name="prenom"
+              placeholder="votre prénom"
+              required
+            />
+
+            <label for="nom">Nom</label>
+            <input type="text" name="nom" placeholder="votre nom" required />
+
+            <label for="objet">Objet</label>
+            <input
+              type="text"
+              name="objet"
+              placeholder="objet de votre demande"
+              required
+            />
+          </div>
+          <div class="textarea">
+            <textarea
+              name="mail"
+              placeholder="rédigez votre mail ici"
+              required
+            ></textarea>
+          </div>
+        </div>
+        <button type="submit" class="bouton">
+          ENVOYER <span></span><span></span><span></span><span></span>
+        </button>
+      </form>
+    </section>
+    <footer>
+      <p>
+        <i class="far fa-copyright"> &nbsp </i>Tristan Richard 2021 <br />
+        source des illustrations: Freepik
+      </p>
+      <a href="tel:0771822320"
+        ><img data-lazy="./images/phone.png" id="phone"
+      /></a>
+    </footer>
+  </body>
 </html>

@@ -570,9 +570,11 @@ body {
     position: absolute;
     bottom: 0;
     right: 0;
-    height: auto;
+    height: 500px;
     width: 100px;
     z-index: 20;
+    background-image: url(./images/fusee2.png);
+    background-size: cover;
 }
 
 #sectContact .titreSect2 {
@@ -1073,6 +1075,12 @@ footer p {
 .sql p{
     color: #007A95;
 }
+.blender29 p{
+    font-size: 1.2vw;
+}
+.adobeIll p{
+    font-size: 1vw;
+}
 /*********hover competences*****************/
 
 .hoverHtml{
@@ -1374,7 +1382,7 @@ footer p {
 
 }
 #apprentissage article:nth-child(3){
-    background-image: url(./images/react.png);
+    background-image: url(./images/Angular.png);
     background-size:cover;  
       
 }

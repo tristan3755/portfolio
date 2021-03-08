@@ -1,29 +1,24 @@
-
 /****************************IntersectionObserverGlobal*************************/
-let mesImages=document.querySelectorAll("img")
+let mesImages = document.querySelectorAll("img");
 
-function lazyLoad(target){
-  
-  let Intersection= new IntersectionObserver((entries,observer)=>{
+function lazyLoad(target) {
+  let Intersection = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      console.log("limage est rentrée");
 
-    entries.forEach(entry =>{
-      console.log('je suis rentrée ma gueule')
-      
-      if(entry.isIntersecting){
-        let imagesEntrees = entry.target
-        let source=imagesEntrees.getAttribute('data-lazy')
-        imagesEntrees.setAttribute('src',source)
-        observer.disconnect()
+      if (entry.isIntersecting) {
+        let imagesEntrees = entry.target;
+        let source = imagesEntrees.getAttribute("data-lazy");
+        imagesEntrees.setAttribute("src", source);
+        observer.disconnect();
       }
-    })
-    
-  })
+    });
+  });
 
-Intersection.observe(target)
-
+  Intersection.observe(target);
 }
 
-mesImages.forEach(lazyLoad)
+mesImages.forEach(lazyLoad);
 /****************************IntersectionObserverGlobal*************************/
 
 document.documentElement.addEventListener("mousemove", (e) => {
@@ -234,152 +229,172 @@ contact.addEventListener("click", () => {
 
 /*******************************competence ****************************/
 
-let hoverHtml=document.querySelector(".hoverHtml")
+let hoverHtml = document.querySelector(".hoverHtml");
 
-function monHoverHtml(){
-hoverHtml.style.top="0"
-hoverHtml.style.width="25%"
-hoverHtml.style.height="25%"
+function monHoverHtml() {
+  hoverHtml.style.top = "0";
+  hoverHtml.style.width = "25%";
+  hoverHtml.style.height = "25%";
 }
 
-if(matchMedia("(max-width:700px)").matches){
-  hoverHtml.addEventListener("click",()=>{
-    monHoverHtml()
-  })
+if (matchMedia("(max-width:700px)").matches) {
+  hoverHtml.addEventListener("click", () => {
+    monHoverHtml();
+  });
 }
 
-let hoverCSS=document.querySelector(".hoverCss")
+let hoverCSS = document.querySelector(".hoverCss");
 
-function monHoverCSS(){
-  hoverCSS.style.top="0"
-  hoverCSS.style.width="25%"
-  hoverCSS.style.height="25%"
+function monHoverCSS() {
+  hoverCSS.style.top = "0";
+  hoverCSS.style.width = "25%";
+  hoverCSS.style.height = "25%";
 }
 
-if(matchMedia("(max-width:700px)").matches){
-  hoverCSS.addEventListener("click",()=>{
-    monHoverCSS()
-  })
+if (matchMedia("(max-width:700px)").matches) {
+  hoverCSS.addEventListener("click", () => {
+    monHoverCSS();
+  });
 }
 
-let hoverJs=document.querySelector(".hoverJs")
+let hoverJs = document.querySelector(".hoverJs");
 
-function monHoverJs(){
-  hoverJs.style.top="0"
-  hoverJs.style.width="25%"
-  hoverJs.style.height="25%"
+function monHoverJs() {
+  hoverJs.style.top = "0";
+  hoverJs.style.width = "25%";
+  hoverJs.style.height = "25%";
 }
 
-if(matchMedia("(max-width:700px)").matches){
-  hoverJs.addEventListener("click",()=>{
-    monHoverJs()
-  })
+if (matchMedia("(max-width:700px)").matches) {
+  hoverJs.addEventListener("click", () => {
+    monHoverJs();
+  });
 }
-let hoverPhp=document.querySelector(".hoverPhp")
+let hoverPhp = document.querySelector(".hoverPhp");
 
-function monHoverPhp(){
-  hoverPhp.style.top="0"
-  hoverPhp.style.width="25%"
-  hoverPhp.style.height="25%"
-}
-
-if(matchMedia("(max-width:700px)").matches){
-  hoverPhp.addEventListener("click",()=>{
-    monHoverPhp()
-  })
+function monHoverPhp() {
+  hoverPhp.style.top = "0";
+  hoverPhp.style.width = "25%";
+  hoverPhp.style.height = "25%";
 }
 
-let threeJs=document.querySelector(".threeJs")
-
-function monHoverThree(){
-  threeJs.style.top="0"
-  threeJs.style.width="25%"
-  threeJs.style.height="25%"
+if (matchMedia("(max-width:700px)").matches) {
+  hoverPhp.addEventListener("click", () => {
+    monHoverPhp();
+  });
 }
 
-if(matchMedia("(max-width:700px)").matches){
-  threeJs.addEventListener("click",()=>{
-    monHoverThree()
-  })
-}
-let blenderHover=document.querySelector(".blenderHover")
+let threeJs = document.querySelector(".threeJs");
 
-function monHoverBlender(){
-  blenderHover.style.top="0"
-  blenderHover.style.width="25%"
-  blenderHover.style.height="25%"
+function monHoverThree() {
+  threeJs.style.top = "0";
+  threeJs.style.width = "25%";
+  threeJs.style.height = "25%";
 }
 
-if(matchMedia("(max-width:700px)").matches){
-  blenderHover.addEventListener("click",()=>{
-    monHoverBlender()
-  })
+if (matchMedia("(max-width:700px)").matches) {
+  threeJs.addEventListener("click", () => {
+    monHoverThree();
+  });
 }
-let hoverAdobeIll=document.querySelector(".hoverAdobeIll")
+let blenderHover = document.querySelector(".blenderHover");
 
-function monHoverIll(){
-  hoverAdobeIll.style.top="0"
-  hoverAdobeIll.style.width="25%"
-  hoverAdobeIll.style.height="25%"
-}
-
-if(matchMedia("(max-width:700px)").matches){
-  hoverAdobeIll.addEventListener("click",()=>{
-    monHoverIll()
-  })
-}
-let hoverAdobePs=document.querySelector(".hoverAdobePs")
-
-function monHoverPs(){
-  hoverAdobePs.style.top="0"
-  hoverAdobePs.style.width="25%"
-  hoverAdobePs.style.height="25%"
+function monHoverBlender() {
+  blenderHover.style.top = "0";
+  blenderHover.style.width = "25%";
+  blenderHover.style.height = "25%";
 }
 
-if(matchMedia("(max-width:700px)").matches){
-  hoverAdobePs.addEventListener("click",()=>{
-    monHoverPs()
-  })
+if (matchMedia("(max-width:700px)").matches) {
+  blenderHover.addEventListener("click", () => {
+    monHoverBlender();
+  });
 }
-let mySql=document.querySelector(".mySql")
+let hoverAdobeIll = document.querySelector(".hoverAdobeIll");
 
-function monHoverSql(){
-  mySql.style.top="0"
-  mySql.style.width="25%"
-  mySql.style.height="25%"
+function monHoverIll() {
+  hoverAdobeIll.style.top = "0";
+  hoverAdobeIll.style.width = "25%";
+  hoverAdobeIll.style.height = "25%";
 }
 
-if(matchMedia("(max-width:700px)").matches){
-  mySql.addEventListener("click",()=>{
-    monHoverSql()
-  })
+if (matchMedia("(max-width:700px)").matches) {
+  hoverAdobeIll.addEventListener("click", () => {
+    monHoverIll();
+  });
+}
+let hoverAdobePs = document.querySelector(".hoverAdobePs");
+
+function monHoverPs() {
+  hoverAdobePs.style.top = "0";
+  hoverAdobePs.style.width = "25%";
+  hoverAdobePs.style.height = "25%";
+}
+
+if (matchMedia("(max-width:700px)").matches) {
+  hoverAdobePs.addEventListener("click", () => {
+    monHoverPs();
+  });
+}
+let mySql = document.querySelector(".mySql");
+
+function monHoverSql() {
+  mySql.style.top = "0";
+  mySql.style.width = "25%";
+  mySql.style.height = "25%";
+}
+
+if (matchMedia("(max-width:700px)").matches) {
+  mySql.addEventListener("click", () => {
+    monHoverSql();
+  });
 }
 
 /****************************IntersectionObserverSection*************************/
-let mesImagesOrdi=document.querySelectorAll("article")
+let mesImagesOrdi = document.querySelectorAll("article");
 
-function translateImg(target){
-
-  
-  let Intersection1= new IntersectionObserver((entries,observer)=>{
-
-    entries.forEach(entry =>{
-      
-      
-      if(entry.isIntersecting){
-        let imagesEntrees1 = entry.target
-        imagesEntrees1.classList.add('animIntersectSection')
-        observer.disconnect()
+if (window.matchMedia("(max-width:700px)").matches) {
+  function translateImg(target) {
+    let Intersection1 = new IntersectionObserver(
+      (entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            let imagesEntrees1 = entry.target;
+            imagesEntrees1.classList.add("animIntersectSection");
+            observer.disconnect();
+          }
+        });
+      },
+      {
+        threshold: 0.2,
       }
-    })
-    
-  },{
-    threshold:0.5
-  })
+    );
 
-Intersection1.observe(target)
+    Intersection1.observe(target);
+  }
 
+  mesImagesOrdi.forEach(translateImg);
+} else {
+  function translateImg(target) {
+    let Intersection1 = new IntersectionObserver(
+      (entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            let imagesEntrees1 = entry.target;
+            imagesEntrees1.classList.add("animIntersectSection");
+            observer.disconnect();
+          }
+        });
+      },
+      {
+        threshold: 0.4,
+      }
+    );
+
+    Intersection1.observe(target);
+  }
+
+  mesImagesOrdi.forEach(translateImg);
 }
 
-mesImagesOrdi.forEach(translateImg)
 /****************************IntersectionObserverSection*************************/
