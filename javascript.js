@@ -104,7 +104,7 @@ let monPortfolio2 = [
     image2: "./images/meteo.jpg",
     lien2: "./sitesPortfolio/apiMeteo/index.html",
     description2:
-      "Application web météo réalisé grace à l'interrogation en AJAX d'une API REST",
+      "Application web météo réalisée grace à l'interrogation en AJAX d'une API REST",
   },
 ];
 
@@ -364,7 +364,9 @@ if (window.matchMedia("(max-width:700px)").matches) {
             observer.disconnect();
           }
         });
-      },
+      }, {
+        threshold: 0
+      }
      
     );
 
