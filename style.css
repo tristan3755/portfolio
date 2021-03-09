@@ -925,7 +925,8 @@ footer p {
     flex-direction: column;
     min-height: 120vh;
     width: 100%;
-    margin-bottom: 150px;  
+    margin-bottom: 150px;
+
 }
 .grid {
     min-height: 60vh;
@@ -946,6 +947,7 @@ footer p {
     justify-content: center;
     min-height: 60vh;
     border-radius: 5px;
+   
 }
 
 .html5 {
@@ -1443,4 +1445,16 @@ article{
     transition: ease 1s;
     transform: translateY(0);
     
+}
+@media(max-width:700px){
+    article{
+       
+        transition: ease 500ms;  
+    }
+    
+    .animIntersectSection{
+        
+        transition: ease 500ms;
+      
+    }
 }

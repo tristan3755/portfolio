@@ -365,9 +365,7 @@ if (window.matchMedia("(max-width:700px)").matches) {
           }
         });
       },
-      {
-        threshold: 0,
-      }
+     
     );
 
     Intersection1.observe(target);
@@ -387,7 +385,7 @@ if (window.matchMedia("(max-width:700px)").matches) {
         });
       },
       {
-        threshold: 0.4,
+        threshold: 0.2
       }
     );
 
