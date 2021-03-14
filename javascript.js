@@ -407,3 +407,4 @@ window.addEventListener('load',()=>{
 maPageChargement.parentElement.removeChild(maPageChargement)
 monBody.style.overflowY='scroll'
 })
+
