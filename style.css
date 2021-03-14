@@ -5,8 +5,8 @@
 body {
     margin: 0;
     padding: 0;
-    /*scroll-behavior: smooth;
-    overflow: hidden;*/
+    scroll-behavior: smooth;
+    overflow: hidden;
    
 }
 #home {
@@ -1491,7 +1491,6 @@ article{
 }
 .chargement div:nth-child(1){
     position: absolute;
-   
     left: 40%;
     transform: translateX(-50%);
     top:50%;
@@ -1499,6 +1498,7 @@ article{
     width: 70px;
     background-color: whitesmoke;
     border-radius: 50%;
+    animation: point1 infinite linear 1.5s;
 }
 .chargement div:nth-child(2){
     position: absolute;
@@ -1510,6 +1510,7 @@ article{
     width:70px;
     background-color: whitesmoke;
     border-radius: 50%;
+    animation: point1 infinite linear 2s;
 }
 .chargement div:nth-child(3){
     position: absolute;
@@ -1521,6 +1522,7 @@ article{
     width: 70px;
     background-color: whitesmoke;
     border-radius: 50%;
+    animation: point1 infinite linear 2.5s;
 }
 
 @media(max-width:800px){
@@ -1536,4 +1538,27 @@ article{
         height: 30px;
          width: 30px;
      }
+}
+
+@keyframes point1{
+    0%{
+        top:50%;
+        opacity: 0.5;
+    }
+    25%{
+        top:45%;
+        opacity: 1;
+    }
+    50%{
+        top:50%;
+        opacity: 0.5;
+    }
+    75%{
+        top:55%;
+        opacity: 0.3;
+    }
+    100%{
+        top:50%;
+        opacity: 0.5;
+    }
 }

@@ -397,55 +397,13 @@ if (window.matchMedia("(max-width:700px)").matches) {
   mesImagesOrdi.forEach(translateImg);
 }
 
+
 /****************************chargement*************************/
 
 let maPageChargement=document.querySelector('.chargement')
 let monBody=document.querySelector('body')
 
 window.addEventListener('load',()=>{
-maPageChargement.style.display='none'
+maPageChargement.parentElement.removeChild(maPageChargement)
 monBody.style.overflowY='scroll'
-})
-
-let point1=document.querySelector(".pointUn")
-let point2=document.querySelector(".pointDeux")
-let point3=document.querySelector(".pointTrois")
-
-function chargement1(){
-  point1.style.top='45%'
-  point1.style.opacity="0.5"
-  point1.style.transition="100ms"
-}
-function chargement2(){
-  point1.style.top='50%'
-  point1.style.opacity="1"
-  point1.style.transition="100ms"
-}
-function chargement3(){
-  point2.style.top='40%'
-  point2.style.opacity="0.5"
-  point2.style.transition="200ms"
-}
-function chargement4(){
-  point2.style.top='50%'
-  point2.style.opacity="1"
-  point2.style.transition="200ms"
-}
-function chargement5(){
-  point3.style.top='40%'
-  point3.style.opacity="0.5"
-  point3.style.transition="200ms"
-}
-function chargement6(){
-  point3.style.top='50%'
-  point3.style.opacity="1"
-  point3.style.transition="200ms"
-}
-window.addEventListener('load',()=>{
-  setInterval(chargement1,500)
-  setInterval(chargement2,900)
-  setInterval(chargement3,600)
-  setInterval(chargement4,1100)
-  setInterval(chargement5,700)
-  setInterval(chargement6,1000)
 })
